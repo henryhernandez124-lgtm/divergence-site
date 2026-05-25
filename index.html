@@ -631,7 +631,7 @@ if(accessForm){
 accessForm.addEventListener('submit', function(){
 setTimeout(function(){
 var thanks = document.getElementById('formThanks');
-if(thanks){ thanks.classList.add('show'); }
+if(thanks){ thanks.classList.add('show'); accessForm.style.display='none'; formThanks.scrollIntoView({behavior:'smooth',block:'center'}); }
 accessForm.reset();
       }, 400);
     });
