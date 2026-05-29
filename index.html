@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Divergence — The experience layer of serious computing</title>
-<meta name="description" content="A Mac-native remote desktop that feels local — carried over a relay you host yourself, end-to-end encrypted, across any network. Underneath it: a protocol-agnostic substrate for moving any signal between machines." />
+<title>Divergence — Your Mac, anywhere</title>
+<meta name="description" content="Mac-to-Mac remote desktop. Pair once in person, or paste a code from anywhere. End-to-end encrypted over a relay you host yourself." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
 <style>
 :root{
---obsidian:#000000;
---paper:#ffffff;
---silver:#dadce0;
---soft-silver:#d6d8dc;
---muted:rgba(214,216,220,0.52);
---muted-strong:rgba(214,216,220,0.74);
---hairline:rgba(214,216,220,0.12);
---hairline-faint:rgba(214,216,220,0.07);
+/* Light theme — variable NAMES kept (obsidian/paper) for diff readability,
+   but the VALUES are inverted. Treat --obsidian as the bg, --paper as the
+   primary ink color, --silver/--soft-silver as muted ink. */
+--obsidian:#f4f1ea;          /* warm off-white background (paper-cream) */
+--paper:#0d0d0d;             /* primary ink */
+--silver:#2a2a2a;            /* mid-ink for accents (pulse, etc.) */
+--soft-silver:#1a1a1a;       /* default body text — slightly lifted from pure ink */
+--muted:rgba(13,13,13,0.5);
+--muted-strong:rgba(13,13,13,0.72);
+--hairline:rgba(13,13,13,0.13);
+--hairline-faint:rgba(13,13,13,0.06);
 --sans:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,sans-serif;
 --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
 --ease:cubic-bezier(0.22,1,0.36,1);
@@ -30,24 +33,17 @@ body{
 background:var(--obsidian);
 color:var(--soft-silver);
 font-family:var(--sans);
-font-weight:300;
-line-height:1.6;
-letter-spacing:0.01em;
+font-weight:400;
+line-height:1.65;
+letter-spacing:0.005em;
 -webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
 text-rendering:optimizeLegibility;
 overflow-x:hidden;
 position:relative;
 }
-body::before{
-content:"";
-position:fixed;inset:0;z-index:0;pointer-events:none;
-background:radial-gradient(circle at 50% 22%, #0b0b0c 0%, #000000 62%);
-}
-body::after{
-content:"";
-position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.025;
-background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+/* Noise + radial gradient overlays removed — they read as "synthetic" and
+   reduce contrast. Solid warm-cream background carries the brand cleanly. */
 .wrap{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter);}
 .mark{display:block;}
 .mark .canopy{fill:var(--paper);}
@@ -73,35 +69,35 @@ transition:color 0.5s var(--ease);
 }
 .topbar nav a:hover{color:var(--soft-silver);}
 .hero{
-min-height:100svh;
+min-height:88svh;
 display:flex;flex-direction:column;justify-content:center;align-items:center;
 text-align:center;
-padding:9rem 0 5rem;
+padding:5rem 0 2.5rem;
 }
-.hero .mark{width:clamp(96px,11vw,148px);height:auto;margin-bottom:clamp(2.2rem,3.6vw,3rem);}
+.hero .mark{width:clamp(88px,10vw,128px);height:auto;margin-bottom:clamp(0.9rem,1.4vw,1.2rem);}
 .hero .wordmark{
-font-size:clamp(0.95rem,1.7vw,1.18rem);
-letter-spacing:0.62em;
-text-transform:uppercase;font-weight:300;
-color:var(--soft-silver);
-padding-left:0.62em;
-margin-bottom:clamp(2.4rem,4vw,3.2rem);
+font-size:clamp(0.92rem,1.6vw,1.12rem);
+letter-spacing:0.48em;
+text-transform:uppercase;font-weight:400;
+color:var(--muted-strong);
+padding-left:0.48em;
+margin-bottom:clamp(1.4rem,2.4vw,1.9rem);
 }
 .hero h1{
-font-weight:200;
+font-weight:400;
 font-size:clamp(2.3rem,6vw,4.3rem);
-line-height:1.05;
-letter-spacing:-0.02em;
+line-height:1.08;
+letter-spacing:-0.015em;
 color:var(--paper);
 max-width:15ch;
-margin-bottom:clamp(1.5rem,2.6vw,2.1rem);
+margin-bottom:clamp(1.1rem,1.8vw,1.5rem);
 }
 .hero p.sub{
-font-size:clamp(1rem,1.5vw,1.18rem);
-font-weight:300;line-height:1.65;
+font-size:clamp(1rem,1.45vw,1.16rem);
+font-weight:400;line-height:1.65;
 color:var(--muted-strong);
 max-width:58ch;
-margin-bottom:clamp(2.4rem,4vw,3.2rem);
+margin-bottom:clamp(1.6rem,2.6vw,2.1rem);
 }
 .cta{
 display:inline-flex;align-items:center;gap:0.7rem;
@@ -111,16 +107,14 @@ border:1px solid var(--hairline);
 padding:0.95rem 1.7rem;border-radius:1px;
 transition:border-color 0.6s var(--ease),background 0.6s var(--ease),color 0.6s var(--ease);
 }
-.cta:hover{border-color:rgba(214,216,220,0.45);background:rgba(214,216,220,0.04);color:var(--paper);}
+.cta:hover{border-color:rgba(13,13,13,0.45);background:rgba(13,13,13,0.04);color:var(--paper);}
 .cta .arrow{transition:transform 0.6s var(--ease);}
 .cta:hover .arrow{transform:translateX(4px);}
-.showcase{padding-top:clamp(2.6rem,5vw,4rem);width:100%;align-self:stretch;}
+.showcase{padding-top:clamp(1.6rem,3vw,2.4rem);width:100%;align-self:stretch;}
 .media{
-position:relative;width:100%;aspect-ratio:16/9;
+position:relative;width:100%;aspect-ratio:1600/1040;
 border:1px solid var(--hairline);border-radius:2px;overflow:hidden;
-background:
-radial-gradient(circle at 50% 38%, #101011 0%, #060607 70%),
-var(--obsidian);
+background:var(--obsidian);
 display:flex;align-items:center;justify-content:center;
 }
 .media > video,.media > img{width:100%;height:100%;object-fit:cover;display:block;}
@@ -154,7 +148,7 @@ text-transform:uppercase;color:var(--muted);
 .metastrip{
 border-top:1px solid var(--hairline-faint);
 border-bottom:1px solid var(--hairline-faint);
-margin-top:clamp(3rem,5vw,4.5rem);
+margin-top:clamp(1.8rem,3vw,2.6rem);
 }
 .metastrip .row{
 display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
@@ -169,23 +163,23 @@ text-transform:uppercase;color:var(--muted);white-space:nowrap;
 .metaitem.live{display:inline-flex;align-items:center;gap:0.55rem;color:var(--muted-strong);}
 .pulse{
 width:5px;height:5px;border-radius:50%;background:var(--silver);
-box-shadow:0 0 0 0 rgba(218,220,224,0.5);
+box-shadow:0 0 0 0 rgba(26,26,26,0.5);
 animation:pulse 3.4s var(--ease) infinite;
 }
 @keyframes pulse{
-0%{box-shadow:0 0 0 0 rgba(218,220,224,0.45);opacity:1;}
-70%{box-shadow:0 0 0 7px rgba(218,220,224,0);opacity:0.55;}
-100%{box-shadow:0 0 0 0 rgba(218,220,224,0);opacity:1;}
+0%{box-shadow:0 0 0 0 rgba(26,26,26,0.45);opacity:1;}
+70%{box-shadow:0 0 0 7px rgba(26,26,26,0);opacity:0.55;}
+100%{box-shadow:0 0 0 0 rgba(26,26,26,0);opacity:1;}
 }
-section{padding:clamp(6rem,12vw,11rem) 0;}
+section{padding:clamp(3.5rem,7vw,6.5rem) 0;}
 .eyebrow{
-font-family:var(--mono);font-size:0.64rem;letter-spacing:0.34em;
-text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem;
+font-family:var(--mono);font-size:0.66rem;letter-spacing:0.22em;
+text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem;font-weight:400;
 }
-.caps .caphead{max-width:44ch;margin-bottom:clamp(3.5rem,6vw,5rem);}
+.caps .caphead{max-width:44ch;margin-bottom:clamp(2rem,3.5vw,3rem);}
 .caps .caphead h2{
-font-weight:200;font-size:clamp(1.5rem,3vw,2.2rem);
-line-height:1.2;letter-spacing:-0.01em;color:var(--paper);
+font-weight:400;font-size:clamp(1.5rem,3vw,2.2rem);
+line-height:1.25;letter-spacing:-0.005em;color:var(--paper);
 }
 .capgrid{
 display:grid;grid-template-columns:repeat(3,1fr);
@@ -204,26 +198,26 @@ font-family:var(--mono);font-size:0.66rem;letter-spacing:0.2em;
 color:var(--muted);margin-bottom:1.5rem;
 }
 .cap h3{
-font-weight:300;font-size:clamp(1.15rem,1.8vw,1.45rem);
+font-weight:500;font-size:clamp(1.15rem,1.8vw,1.45rem);
 letter-spacing:-0.005em;color:var(--paper);margin-bottom:0.95rem;
 }
-.cap p{font-size:0.96rem;line-height:1.66;color:var(--muted-strong);font-weight:300;}
-.how .howhead{max-width:46ch;margin-bottom:clamp(3rem,5vw,4.5rem);}
+.cap p{font-size:0.97rem;line-height:1.7;color:var(--muted-strong);font-weight:400;}
+.how .howhead{max-width:46ch;margin-bottom:clamp(2rem,3.5vw,3rem);}
 .how .howhead h2{
-font-weight:200;font-size:clamp(1.5rem,3vw,2.2rem);
-line-height:1.2;letter-spacing:-0.01em;color:var(--paper);
+font-weight:400;font-size:clamp(1.5rem,3vw,2.2rem);
+line-height:1.25;letter-spacing:-0.005em;color:var(--paper);
 }
 .diagram{
 display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;
 border:1px solid var(--hairline);border-radius:2px;
-margin-bottom:clamp(2.6rem,4vw,3.4rem);
+margin-bottom:clamp(1.6rem,2.5vw,2.2rem);
 }
 .dnode{
 flex:1 1 220px;
 padding:clamp(2rem,3vw,2.8rem) clamp(1.4rem,2.2vw,2rem);
 display:flex;flex-direction:column;align-items:center;gap:0.65rem;text-align:center;
 }
-.dnode.relay{background:rgba(214,216,220,0.022);}
+.dnode.relay{background:rgba(13,13,13,0.022);}
 .dnode .dmark{
 width:30px;height:26px;margin-bottom:0.5rem;opacity:0.9;
 }
@@ -253,7 +247,7 @@ padding:clamp(1.5rem,2.4vw,2rem);
 font-family:var(--mono);font-size:0.6rem;letter-spacing:0.22em;
 text-transform:uppercase;color:var(--muted);margin-bottom:0.7rem;
 }
-.specitem .v{font-size:0.95rem;color:var(--soft-silver);font-weight:300;line-height:1.55;}
+.specitem .v{font-size:0.96rem;color:var(--soft-silver);font-weight:400;line-height:1.6;}
 .thesis{text-align:center;padding-top:clamp(7rem,13vw,12rem);padding-bottom:clamp(7rem,13vw,12rem);}
 .thesis blockquote{
 font-weight:200;
@@ -310,14 +304,14 @@ text-transform:uppercase;color:var(--muted-strong);
 .access{text-align:center;border-top:1px solid var(--hairline);}
 .access .eyebrow{margin-bottom:1.4rem;}
 .access h2{
-font-weight:200;font-size:clamp(1.6rem,3.4vw,2.5rem);
-line-height:1.18;letter-spacing:-0.012em;color:var(--paper);
+font-weight:400;font-size:clamp(1.6rem,3.4vw,2.5rem);
+line-height:1.22;letter-spacing:-0.005em;color:var(--paper);
 max-width:18ch;margin:0 auto clamp(1rem,2vw,1.4rem);
 }
 .access p.lede{
 max-width:52ch;margin:0 auto clamp(2.4rem,4vw,3rem);
-font-size:clamp(0.98rem,1.4vw,1.1rem);line-height:1.65;
-color:var(--muted-strong);font-weight:300;
+font-size:clamp(0.98rem,1.4vw,1.1rem);line-height:1.7;
+color:var(--muted-strong);font-weight:400;
 }
 .signup{
 display:flex;flex-wrap:wrap;gap:0.7rem;justify-content:center;
@@ -325,7 +319,7 @@ max-width:540px;margin:0 auto;
 }
 .signup input[type=email]{
 flex:1 1 260px;min-width:0;
-background:rgba(214,216,220,0.04);
+background:rgba(13,13,13,0.04);
 border:1px solid var(--hairline);border-radius:1px;
 color:var(--paper);font-family:var(--mono);
 font-size:0.78rem;letter-spacing:0.1em;
@@ -334,7 +328,7 @@ transition:border-color 0.5s var(--ease),background 0.5s var(--ease);
 }
 .signup input[type=email]::placeholder{color:var(--muted);letter-spacing:0.1em;}
 .signup input[type=email]:focus{
-outline:none;border-color:rgba(214,216,220,0.5);background:rgba(214,216,220,0.06);
+outline:none;border-color:rgba(13,13,13,0.5);background:rgba(13,13,13,0.06);
 }
 .signup button{
 display:inline-flex;align-items:center;gap:0.7rem;
@@ -345,7 +339,7 @@ border:1px solid var(--hairline);border-radius:1px;
 padding:0.95rem 1.7rem;
 transition:border-color 0.6s var(--ease),background 0.6s var(--ease),color 0.6s var(--ease);
 }
-.signup button:hover{border-color:rgba(214,216,220,0.45);background:rgba(214,216,220,0.04);color:var(--paper);}
+.signup button:hover{border-color:rgba(13,13,13,0.45);background:rgba(13,13,13,0.04);color:var(--paper);}
 .signup button .arrow{transition:transform 0.6s var(--ease);}
 .signup button:hover .arrow{transform:translateX(4px);}
 .form-note{
@@ -359,9 +353,44 @@ color:var(--soft-silver);
 }
 .form-thanks.show{display:block;animation:rise 0.8s var(--ease) forwards;}
 @media(max-width:560px){.signup button{flex:1 1 100%;justify-content:center;}}
+.download-wrap{
+display:flex;flex-direction:column;align-items:center;gap:0.7rem;
+margin-bottom:clamp(2rem,3vw,2.6rem);
+}
+.download-cta{
+display:inline-flex;align-items:center;gap:0.7rem;
+font-family:var(--mono);font-size:0.78rem;letter-spacing:0.22em;
+text-transform:uppercase;color:var(--obsidian);
+background:var(--paper);cursor:pointer;
+border:1px solid var(--paper);border-radius:1px;
+padding:1.1rem 2rem;
+transition:background 0.6s var(--ease),color 0.6s var(--ease),transform 0.4s var(--ease),opacity 0.6s var(--ease);
+}
+.download-cta:hover{background:var(--silver);transform:translateY(-1px);}
+.download-cta:disabled{opacity:0.5;cursor:not-allowed;}
+.download-cta:disabled:hover{background:var(--paper);transform:none;}
+.download-cta .arrow{transition:transform 0.6s var(--ease);}
+.download-cta:hover:not(:disabled) .arrow{transform:translateX(4px);}
+.download-meta{
+font-family:var(--mono);font-size:0.62rem;letter-spacing:0.2em;
+text-transform:uppercase;color:var(--muted);
+}
+.email-fallback{
+margin-top:clamp(1.5rem,3vw,2.2rem);max-width:540px;margin-left:auto;margin-right:auto;
+text-align:center;
+}
+.email-fallback summary{
+font-family:var(--mono);font-size:0.66rem;letter-spacing:0.22em;
+text-transform:uppercase;color:var(--muted);cursor:pointer;
+list-style:none;padding:0.6rem 0;display:inline-block;
+transition:color 0.5s var(--ease);
+}
+.email-fallback summary:hover{color:var(--soft-silver);}
+.email-fallback summary::-webkit-details-marker{display:none;}
+.email-fallback[open] summary{color:var(--soft-silver);margin-bottom:1.4rem;}
 footer{
 border-top:1px solid var(--hairline);
-padding:clamp(5rem,9vw,8rem) 0 clamp(3rem,5vw,4rem);
+padding:clamp(3rem,5vw,5rem) 0 clamp(2rem,3vw,3rem);
 text-align:center;
 }
 footer .lockup{display:inline-flex;flex-direction:column;align-items:center;gap:1.4rem;margin-bottom:clamp(3rem,5vw,4rem);}
@@ -414,10 +443,12 @@ animation:rise 1.05s var(--ease) forwards;
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
+<!-- "silverMetal" gradient ID kept for diff readability, but stops are now
+     a dark ink radial — negative of the original silver gradient. -->
 <radialGradient id="silverMetal" cx="38%" cy="32%" r="78%">
-<stop offset="0%" stop-color="#f1f2f4"/>
-<stop offset="42%" stop-color="#dadce0"/>
-<stop offset="100%" stop-color="#a9adb3"/>
+<stop offset="0%" stop-color="#3a3a3a"/>
+<stop offset="42%" stop-color="#1a1a1a"/>
+<stop offset="100%" stop-color="#0d0d0d"/>
 </radialGradient>
 </defs>
 </svg>
@@ -432,7 +463,7 @@ animation:rise 1.05s var(--ease) forwards;
 </svg>
 <span class="name">Divergence</span>
 </div>
-<nav class="reveal d1"><a href="#access">Request access</a></nav>
+<nav class="reveal d1"><a href="#access">Waitlist</a></nav>
 </div>
 </header>
 <main>
@@ -445,32 +476,24 @@ animation:rise 1.05s var(--ease) forwards;
 <circle class="base"   cx="120" cy="132" r="32"/>
 </svg>
 <div class="wordmark reveal d2">Divergence</div>
-<h1 class="reveal d3">Your machines. Your relay. Any network.</h1>
-<p class="sub reveal d4">A Mac-native remote desktop that feels like the machine is sitting in front of you — carried over a relay you host yourself, end-to-end encrypted, across any network. Underneath it sits something larger: a protocol-agnostic substrate for moving any signal between machines.</p>
-<a href="#access" class="cta reveal d5">Request early access <span class="arrow">&rarr;</span></a>
+<h1 class="reveal d3">Your Mac, anywhere.</h1>
+<p class="sub reveal d4">Mac-to-Mac remote desktop that feels like the machine is in front of you. Pair once in person — or paste a code from anywhere — and reach your fleet from any network. End-to-end encrypted, over a relay you host yourself.</p>
+<button id="downloadBtn" class="download-cta reveal d5" type="button">Download for macOS <span class="arrow">&rarr;</span></button>
+<div class="download-meta reveal d5" style="margin-top:0.9rem;">Apple Silicon &middot; macOS 14+ &middot; ~6 MB</div>
 <div class="showcase reveal d6">
 <div class="media">
-<div class="placeholder">
-<span class="glyph">
-<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4l14 8-14 8V4z" fill="currentColor"/></svg>
-</span>
-<span>Live session &middot; place demo here</span>
-</div>
-<div class="frameline">
-<span class="live"><span class="pulse"></span>Live session</span>
-<span>H.264 &middot; 58&nbsp;fps &middot; end-to-end encrypted</span>
-</div>
+<video src="assets/hero-demo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Divergence demo: connect from one Mac to another, then disconnect"></video>
 </div>
 <div class="media-caption">A full desktop, carried over a relay you own</div>
 </div>
 </div>
 <div class="metastrip reveal d7" style="width:100%;align-self:stretch;">
 <div class="row">
-<span class="metaitem live"><span class="pulse"></span>Substrate online</span>
+<span class="metaitem live"><span class="pulse"></span>Mac-native</span>
 <span class="metaitem">Self-hosted relay</span>
 <span class="metaitem">End-to-end encrypted</span>
 <span class="metaitem">Cross-NAT</span>
-<span class="metaitem">Native &middot; RDP &middot; VNC</span>
+<span class="metaitem">Pair-once</span>
 <span class="metaitem">Zero-copy Metal</span>
 <span class="metaitem">Swift + Metal</span>
 </div>
@@ -480,7 +503,7 @@ animation:rise 1.05s var(--ease) forwards;
 <div class="wrap">
 <div class="caphead obs">
 <div class="eyebrow">What it is, today</div>
-<h2>A remote desktop that disappears — the picture is native, the protocol is invisible, and the relay between your machines is yours.</h2>
+<h2>A remote desktop that disappears — the picture is native, pairing is one tap, and the relay between your machines is yours.</h2>
 </div>
 <div class="capgrid obs">
 <div class="cap">
@@ -490,8 +513,8 @@ animation:rise 1.05s var(--ease) forwards;
 </div>
 <div class="cap">
 <div class="idx">02</div>
-<h3>Any machine, any protocol</h3>
-<p>A native Mac-to-Mac path on ScreenCaptureKit, plus RDP and VNC, converge on one substrate. Every source — input, frames, and audio — flows through a single pipeline with the same calm experience on top.</p>
+<h3>Pair once, anywhere</h3>
+<p>Hand off a key in person with AirDrop, or paste a 72-character code from Messages, Mail, or any text channel. Your fleet — every paired Mac — appears wherever you are.</p>
 </div>
 <div class="cap">
 <div class="idx">03</div>
@@ -541,53 +564,20 @@ animation:rise 1.05s var(--ease) forwards;
 <div class="specitem"><div class="k">Encryption</div><div class="v">ChaCha20-Poly1305, end to end. The relay never holds a key.</div></div>
 <div class="specitem"><div class="k">Transport</div><div class="v">UDP-direct on the LAN, TCP over your relay across NAT — chosen automatically.</div></div>
 <div class="specitem"><div class="k">Trust</div><div class="v">SPKI certificate pinning to your own box. Fails closed on mismatch.</div></div>
-<div class="specitem"><div class="k">Stack</div><div class="v">Swift + Metal, Mac-native. RDP and VNC ride the same substrate.</div></div>
+<div class="specitem"><div class="k">Stack</div><div class="v">Swift + Metal, Mac-native end to end.</div></div>
 </div>
-</div>
-</section>
-<section class="thesis">
-<div class="wrap obs">
-<blockquote>Protocols are plumbing. The experience layer is the product.</blockquote>
-<div class="attrib">— The Divergence principle</div>
-</div>
-</section>
-<section class="horizon">
-<div class="wrap">
-<div class="hzhead obs">
-<div class="eyebrow">What it's for</div>
-<h2>A remote desktop is the first thing the substrate does. Not the last.</h2>
-</div>
-<p class="hzlede obs">Every signal — a keystroke, a rendered frame, a gesture, a sensor reading — crosses one typed, gated, audited boundary before it reaches the machine on the other side. That boundary doesn't care whether the signal came from a hand, a protocol, or a model. Which is the entire point: build the boundary once, and the things you can carry across it stop being a list and start being a question of what you point it at.</p>
-<div class="capgrid obs">
-<div class="cap">
-<div class="idx">01</div>
-<h3>Autonomous systems</h3>
-<p>Observation flowing out, intent flowing in, gated at a single auditable seam. The architecture that carries a desktop is the architecture that carries a vehicle's perception and control — the same boundary, a different signal class.</p>
-</div>
-<div class="cap">
-<div class="idx">02</div>
-<h3>Medicine, at a distance</h3>
-<p>Remote presence where every action traces back to its origin, and the system can refuse an action when context demands it. Auditable by construction — the seam that authorizes a click is the seam that authorizes a procedure.</p>
-</div>
-<div class="cap">
-<div class="idx">03</div>
-<h3>Neural signal remapping</h3>
-<p>A typed intent vocabulary built to be extended to new sources — by design, including a brain–computer interface. Restoring movement is a remapping problem, and the substrate is shaped to carry the map.</p>
-</div>
-</div>
-<div class="obs"><span class="tag">Trajectory &middot; patent pending &middot; a five-part family</span></div>
 </div>
 </section>
 <section class="access" id="access">
 <div class="wrap obs">
-<div class="eyebrow">Request early access</div>
-<h2>Be among the first to run it.</h2>
-<p class="lede">Leave your email and we'll reach out as we open the next round of access. No spam, no list-selling — just a note when it's your turn.</p>
+<div class="eyebrow">Stay in the loop</div>
+<h2>Join the Divergence waitlist.</h2>
+<p class="lede">We'll send a note when major updates ship — new pairing channels, the relay client, mobile, and anything else worth your inbox. No spam, no list-selling.</p>
 <form class="signup" id="accessForm"
       action="https://docs.google.com/forms/d/e/1FAIpQLSeTF_SsNkDakEMvyhDyikStveg8rNuT6QUClSN9Xz0tKnuiUw/formResponse"
       method="POST" target="hidden_iframe">
 <input type="email" name="entry.88884695" placeholder="you@domain.com" required autocomplete="email" aria-label="Your email address" />
-<button type="submit">Request access <span class="arrow">&rarr;</span></button>
+<button type="submit">Notify me <span class="arrow">&rarr;</span></button>
 </form>
 <div class="form-note">We read every request personally.</div>
 <div class="form-thanks" id="formThanks">Thank you — you're on the list. We'll be in touch.</div>
@@ -636,6 +626,124 @@ accessForm.reset();
       }, 400);
     });
   }
+</script>
+
+<!-- =====================================================================
+     Download flow — Clerk auth + Clerk Billing entitlement + DMG redirect
+     =====================================================================
+
+     Five strings need to be filled before going live (search "REPLACE_ME"):
+       1. CLERK_PUBLISHABLE_KEY  — Clerk dashboard → API keys → Publishable key
+                                   (starts with pk_live_... or pk_test_...)
+       2. CLERK_FRONTEND_API     — Clerk dashboard → API keys → Frontend API URL
+                                   (looks like "your-app.clerk.accounts.dev")
+       3. CLERK_PLAN_ID          — Clerk Billing plan ID for the Divergence
+                                   license (set up in Clerk dashboard → Billing)
+       4. CLERK_PRICING_URL      — Hosted pricing page fallback if openCheckout
+                                   isn't available (Clerk dashboard → Billing
+                                   → hosted pricing page URL)
+       5. DMG_DOWNLOAD_URL       — Final hosted .dmg URL (GitHub Releases / R2 /
+                                   signed Cloudflare URL / etc.). The script
+                                   only kicks this redirect AFTER Clerk confirms
+                                   a paid entitlement, so the URL itself doesn't
+                                   need to be obfuscated.
+
+     Until those are filled, the Download button shows a graceful "Coming soon"
+     state and the user falls through to the waitlist.
+====================================================================== -->
+<script>
+const CLERK_PUBLISHABLE_KEY = 'REPLACE_ME_CLERK_PUBLISHABLE_KEY';
+const CLERK_FRONTEND_API    = 'REPLACE_ME.clerk.accounts.dev';
+const CLERK_PLAN_ID         = 'REPLACE_ME_PLAN_ID';
+const CLERK_PRICING_URL     = 'REPLACE_ME_PRICING_URL';
+const DMG_DOWNLOAD_URL      = 'REPLACE_ME_DMG_URL';
+
+const CLERK_CONFIGURED = !CLERK_PUBLISHABLE_KEY.includes('REPLACE_ME')
+                      && !CLERK_FRONTEND_API.includes('REPLACE_ME');
+
+(function loadClerk(){
+  if (!CLERK_CONFIGURED) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.setAttribute('data-clerk-publishable-key', CLERK_PUBLISHABLE_KEY);
+  s.src = 'https://' + CLERK_FRONTEND_API + '/npm/@clerk/clerk-js@latest/dist/clerk.browser.js';
+  document.head.appendChild(s);
+})();
+
+(function wireDownload(){
+  var btn = document.getElementById('downloadBtn');
+  if (!btn) return;
+
+  if (!CLERK_CONFIGURED) {
+    btn.disabled = true;
+    btn.innerHTML = 'Coming soon <span class="arrow">&rarr;</span>';
+    btn.setAttribute('aria-label', 'Download coming soon — join the waitlist below');
+    return;
+  }
+
+  btn.addEventListener('click', async function(){
+    try {
+      if (!window.Clerk) {
+        btn.disabled = true;
+        btn.innerHTML = 'Loading… <span class="arrow">&rarr;</span>';
+        await new Promise(function(resolve){
+          var poll = setInterval(function(){ if (window.Clerk) { clearInterval(poll); resolve(); } }, 80);
+          setTimeout(function(){ clearInterval(poll); resolve(); }, 6000);
+        });
+        btn.disabled = false;
+        btn.innerHTML = 'Download for macOS <span class="arrow">&rarr;</span>';
+        if (!window.Clerk) {
+          alert('Could not reach Clerk. Please try again in a moment, or join the waitlist below.');
+          return;
+        }
+      }
+      await window.Clerk.load();
+
+      // Not signed in → open Clerk sign-in modal
+      if (!window.Clerk.user) {
+        window.Clerk.openSignIn({
+          afterSignInUrl:  window.location.href.split('#')[0] + '#access',
+          afterSignUpUrl:  window.location.href.split('#')[0] + '#access'
+        });
+        return;
+      }
+
+      // Signed in — check Billing entitlement
+      var hasLicense = false;
+      try {
+        if (typeof window.Clerk.user.has === 'function') {
+          hasLicense = window.Clerk.user.has({ plan: CLERK_PLAN_ID }) === true;
+        }
+        if (!hasLicense && window.Clerk.user.publicMetadata) {
+          hasLicense = window.Clerk.user.publicMetadata.hasLicense === true;
+        }
+      } catch (e) { /* fall through to checkout */ }
+
+      if (!hasLicense) {
+        // Try Clerk's in-page checkout; fall back to hosted pricing page
+        if (typeof window.Clerk.__internal_openCheckout === 'function') {
+          window.Clerk.__internal_openCheckout({ planId: CLERK_PLAN_ID });
+        } else if (CLERK_PRICING_URL && !CLERK_PRICING_URL.includes('REPLACE_ME')) {
+          window.location.href = CLERK_PRICING_URL;
+        } else {
+          alert('Payment setup not yet available. Please join the waitlist below.');
+        }
+        return;
+      }
+
+      // Entitled — kick the download (or graceful coming-soon if DMG not yet hosted)
+      if (!DMG_DOWNLOAD_URL || DMG_DOWNLOAD_URL.includes('REPLACE_ME')) {
+        alert('Download URL not yet configured. We\'ll email you when it\'s ready.');
+        return;
+      }
+      window.location.href = DMG_DOWNLOAD_URL;
+    } catch (err) {
+      console.error('[download] error:', err);
+      alert('Something went wrong. Please try again or join the waitlist below.');
+    }
+  });
+})();
 </script>
 </body>
 </html>
