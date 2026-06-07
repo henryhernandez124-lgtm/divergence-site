@@ -352,42 +352,11 @@ font-family:var(--mono);font-size:0.74rem;letter-spacing:0.14em;
 color:var(--soft-silver);
 }
 .form-thanks.show{display:block;animation:rise 0.8s var(--ease) forwards;}
-@media(max-width:560px){.signup button{flex:1 1 100%;justify-content:center;}}
-.download-wrap{
-display:flex;flex-direction:column;align-items:center;gap:0.7rem;
-margin-bottom:clamp(2rem,3vw,2.6rem);
+@media(max-width:560px){
+.signup button{flex:1 1 100%;justify-content:center;}
+/* keep the headline from clipping on narrow phones (was overflowing right edge) */
+.hero h1{font-size:clamp(1.9rem,8.5vw,2.3rem);}
 }
-.download-cta{
-display:inline-flex;align-items:center;gap:0.7rem;
-font-family:var(--mono);font-size:0.78rem;letter-spacing:0.22em;
-text-transform:uppercase;color:var(--obsidian);
-background:var(--paper);cursor:pointer;
-border:1px solid var(--paper);border-radius:1px;
-padding:1.1rem 2rem;
-transition:background 0.6s var(--ease),color 0.6s var(--ease),transform 0.4s var(--ease),opacity 0.6s var(--ease);
-}
-.download-cta:hover{background:var(--silver);transform:translateY(-1px);}
-.download-cta:disabled{opacity:0.5;cursor:not-allowed;}
-.download-cta:disabled:hover{background:var(--paper);transform:none;}
-.download-cta .arrow{transition:transform 0.6s var(--ease);}
-.download-cta:hover:not(:disabled) .arrow{transform:translateX(4px);}
-.download-meta{
-font-family:var(--mono);font-size:0.62rem;letter-spacing:0.2em;
-text-transform:uppercase;color:var(--muted);
-}
-.email-fallback{
-margin-top:clamp(1.5rem,3vw,2.2rem);max-width:540px;margin-left:auto;margin-right:auto;
-text-align:center;
-}
-.email-fallback summary{
-font-family:var(--mono);font-size:0.66rem;letter-spacing:0.22em;
-text-transform:uppercase;color:var(--muted);cursor:pointer;
-list-style:none;padding:0.6rem 0;display:inline-block;
-transition:color 0.5s var(--ease);
-}
-.email-fallback summary:hover{color:var(--soft-silver);}
-.email-fallback summary::-webkit-details-marker{display:none;}
-.email-fallback[open] summary{color:var(--soft-silver);margin-bottom:1.4rem;}
 footer{
 border-top:1px solid var(--hairline);
 padding:clamp(3rem,5vw,5rem) 0 clamp(2rem,3vw,3rem);
@@ -467,7 +436,7 @@ animation:rise 1.05s var(--ease) forwards;
 </div>
 </header>
 <main>
-<section class="hero">
+<section class="hero" id="access">
 <div class="wrap" style="display:flex;flex-direction:column;align-items:center;">
 <svg class="mark reveal d1" viewBox="0 0 240 200" aria-label="Divergence" role="img">
 <circle class="canopy" cx="64" cy="78"  r="28"/>
@@ -478,8 +447,14 @@ animation:rise 1.05s var(--ease) forwards;
 <div class="wordmark reveal d2">Divergence</div>
 <h1 class="reveal d3">Your Mac, anywhere.</h1>
 <p class="sub reveal d4">Mac-to-Mac remote desktop that feels like the machine is in front of you. Pair once in person — or paste a code from anywhere — and reach your fleet from any network. End-to-end encrypted, over a relay you host yourself.</p>
-<button id="downloadBtn" class="download-cta reveal d5" type="button">Download for macOS <span class="arrow">&rarr;</span></button>
-<div class="download-meta reveal d5" style="margin-top:0.9rem;">Apple Silicon &middot; macOS 14+ &middot; ~6 MB</div>
+<form class="signup reveal d5" id="accessForm"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeTF_SsNkDakEMvyhDyikStveg8rNuT6QUClSN9Xz0tKnuiUw/formResponse"
+      method="POST" target="hidden_iframe">
+<input type="email" name="entry.88884695" placeholder="you@domain.com" required autocomplete="email" aria-label="Your email address" />
+<button type="submit">Get early access <span class="arrow">&rarr;</span></button>
+</form>
+<div class="form-note reveal d5">Free while in beta</div>
+<div class="form-thanks reveal d5" id="formThanks">Thank you — you're on the list. We'll be in touch.</div>
 <div class="showcase reveal d6">
 <div class="media">
 <video src="assets/hero-demo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Divergence demo: connect from one Mac to another, then disconnect"></video>
@@ -568,21 +543,6 @@ animation:rise 1.05s var(--ease) forwards;
 </div>
 </div>
 </section>
-<section class="access" id="access">
-<div class="wrap obs">
-<div class="eyebrow">Stay in the loop</div>
-<h2>Join the Divergence waitlist.</h2>
-<p class="lede">We'll send a note when major updates ship — new pairing channels, the relay client, mobile, and anything else worth your inbox. No spam, no list-selling.</p>
-<form class="signup" id="accessForm"
-      action="https://docs.google.com/forms/d/e/1FAIpQLSeTF_SsNkDakEMvyhDyikStveg8rNuT6QUClSN9Xz0tKnuiUw/formResponse"
-      method="POST" target="hidden_iframe">
-<input type="email" name="entry.88884695" placeholder="you@domain.com" required autocomplete="email" aria-label="Your email address" />
-<button type="submit">Notify me <span class="arrow">&rarr;</span></button>
-</form>
-<div class="form-note">We read every request personally.</div>
-<div class="form-thanks" id="formThanks">Thank you — you're on the list. We'll be in touch.</div>
-</div>
-</section>
 </main>
 <iframe name="hidden_iframe" style="display:none" aria-hidden="true" title="form target"></iframe>
 <footer>
@@ -597,6 +557,9 @@ animation:rise 1.05s var(--ease) forwards;
 <span class="name">Divergence</span>
 </div>
 <div class="footmeta obs">
+<a href="/privacy">Privacy</a>
+<a href="/cookies">Cookies</a>
+<a href="/terms">Terms</a>
 <a href="mailto:access@divergenceapp.com">access@divergenceapp.com</a>
 <span>HDZ Capital Group LLC · Miami, FL</span>
 <span>Patent pending</span>
@@ -628,122 +591,5 @@ accessForm.reset();
   }
 </script>
 
-<!-- =====================================================================
-     Download flow — Clerk auth + Clerk Billing entitlement + DMG redirect
-     =====================================================================
-
-     Five strings need to be filled before going live (search "REPLACE_ME"):
-       1. CLERK_PUBLISHABLE_KEY  — Clerk dashboard → API keys → Publishable key
-                                   (starts with pk_live_... or pk_test_...)
-       2. CLERK_FRONTEND_API     — Clerk dashboard → API keys → Frontend API URL
-                                   (looks like "your-app.clerk.accounts.dev")
-       3. CLERK_PLAN_ID          — Clerk Billing plan ID for the Divergence
-                                   license (set up in Clerk dashboard → Billing)
-       4. CLERK_PRICING_URL      — Hosted pricing page fallback if openCheckout
-                                   isn't available (Clerk dashboard → Billing
-                                   → hosted pricing page URL)
-       5. DMG_DOWNLOAD_URL       — Final hosted .dmg URL (GitHub Releases / R2 /
-                                   signed Cloudflare URL / etc.). The script
-                                   only kicks this redirect AFTER Clerk confirms
-                                   a paid entitlement, so the URL itself doesn't
-                                   need to be obfuscated.
-
-     Until those are filled, the Download button shows a graceful "Coming soon"
-     state and the user falls through to the waitlist.
-====================================================================== -->
-<script>
-const CLERK_PUBLISHABLE_KEY = 'REPLACE_ME_CLERK_PUBLISHABLE_KEY';
-const CLERK_FRONTEND_API    = 'REPLACE_ME.clerk.accounts.dev';
-const CLERK_PLAN_ID         = 'REPLACE_ME_PLAN_ID';
-const CLERK_PRICING_URL     = 'REPLACE_ME_PRICING_URL';
-const DMG_DOWNLOAD_URL      = 'REPLACE_ME_DMG_URL';
-
-const CLERK_CONFIGURED = !CLERK_PUBLISHABLE_KEY.includes('REPLACE_ME')
-                      && !CLERK_FRONTEND_API.includes('REPLACE_ME');
-
-(function loadClerk(){
-  if (!CLERK_CONFIGURED) return;
-  var s = document.createElement('script');
-  s.async = true;
-  s.crossOrigin = 'anonymous';
-  s.setAttribute('data-clerk-publishable-key', CLERK_PUBLISHABLE_KEY);
-  s.src = 'https://' + CLERK_FRONTEND_API + '/npm/@clerk/clerk-js@latest/dist/clerk.browser.js';
-  document.head.appendChild(s);
-})();
-
-(function wireDownload(){
-  var btn = document.getElementById('downloadBtn');
-  if (!btn) return;
-
-  if (!CLERK_CONFIGURED) {
-    btn.disabled = true;
-    btn.innerHTML = 'Coming soon <span class="arrow">&rarr;</span>';
-    btn.setAttribute('aria-label', 'Download coming soon — join the waitlist below');
-    return;
-  }
-
-  btn.addEventListener('click', async function(){
-    try {
-      if (!window.Clerk) {
-        btn.disabled = true;
-        btn.innerHTML = 'Loading… <span class="arrow">&rarr;</span>';
-        await new Promise(function(resolve){
-          var poll = setInterval(function(){ if (window.Clerk) { clearInterval(poll); resolve(); } }, 80);
-          setTimeout(function(){ clearInterval(poll); resolve(); }, 6000);
-        });
-        btn.disabled = false;
-        btn.innerHTML = 'Download for macOS <span class="arrow">&rarr;</span>';
-        if (!window.Clerk) {
-          alert('Could not reach Clerk. Please try again in a moment, or join the waitlist below.');
-          return;
-        }
-      }
-      await window.Clerk.load();
-
-      // Not signed in → open Clerk sign-in modal
-      if (!window.Clerk.user) {
-        window.Clerk.openSignIn({
-          afterSignInUrl:  window.location.href.split('#')[0] + '#access',
-          afterSignUpUrl:  window.location.href.split('#')[0] + '#access'
-        });
-        return;
-      }
-
-      // Signed in — check Billing entitlement
-      var hasLicense = false;
-      try {
-        if (typeof window.Clerk.user.has === 'function') {
-          hasLicense = window.Clerk.user.has({ plan: CLERK_PLAN_ID }) === true;
-        }
-        if (!hasLicense && window.Clerk.user.publicMetadata) {
-          hasLicense = window.Clerk.user.publicMetadata.hasLicense === true;
-        }
-      } catch (e) { /* fall through to checkout */ }
-
-      if (!hasLicense) {
-        // Try Clerk's in-page checkout; fall back to hosted pricing page
-        if (typeof window.Clerk.__internal_openCheckout === 'function') {
-          window.Clerk.__internal_openCheckout({ planId: CLERK_PLAN_ID });
-        } else if (CLERK_PRICING_URL && !CLERK_PRICING_URL.includes('REPLACE_ME')) {
-          window.location.href = CLERK_PRICING_URL;
-        } else {
-          alert('Payment setup not yet available. Please join the waitlist below.');
-        }
-        return;
-      }
-
-      // Entitled — kick the download (or graceful coming-soon if DMG not yet hosted)
-      if (!DMG_DOWNLOAD_URL || DMG_DOWNLOAD_URL.includes('REPLACE_ME')) {
-        alert('Download URL not yet configured. We\'ll email you when it\'s ready.');
-        return;
-      }
-      window.location.href = DMG_DOWNLOAD_URL;
-    } catch (err) {
-      console.error('[download] error:', err);
-      alert('Something went wrong. Please try again or join the waitlist below.');
-    }
-  });
-})();
-</script>
 </body>
 </html>
