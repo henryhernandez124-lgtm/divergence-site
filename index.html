@@ -3,8 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Divergence — Your Mac, anywhere</title>
-<meta name="description" content="Mac-to-Mac remote desktop. Pair once in person, or paste a code from anywhere. End-to-end encrypted over a relay you host yourself." />
+<title>Divergence — Any computer, anywhere. Mac &amp; Windows.</title>
+<meta name="description" content="Control your Windows PC — or another Mac — from your MacBook, anywhere. Pair once in person or paste a code; the full desktop streams to you, end-to-end encrypted, over a relay you host yourself." />
+<link rel="canonical" href="https://divergenceapp.com/" />
+<!-- Social / Open Graph — what unfurls in a TikTok bio, Messages, or any link preview. Kept on-message. -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://divergenceapp.com/" />
+<meta property="og:title" content="Any computer. Anywhere. No difference." />
+<meta property="og:description" content="Divergence makes the machine across the room — or across the country — indistinguishable from the one in front of you. Mac or Windows PC, end-to-end encrypted, over a relay you host yourself." />
+<meta property="og:image" content="https://divergenceapp.com/assets/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@divergenceapp" />
+<meta name="twitter:title" content="Any computer. Anywhere. No difference." />
+<meta name="twitter:description" content="Control your Windows PC or another Mac from your MacBook — anywhere. End-to-end encrypted, over a relay you host yourself." />
+<meta name="twitter:image" content="https://divergenceapp.com/assets/og-card.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
@@ -445,8 +457,8 @@ animation:rise 1.05s var(--ease) forwards;
 <circle class="base"   cx="120" cy="132" r="32"/>
 </svg>
 <div class="wordmark reveal d2">Divergence</div>
-<h1 class="reveal d3">Your Mac, anywhere.</h1>
-<p class="sub reveal d4">Mac-to-Mac remote desktop that feels like the machine is in front of you. Pair once in person — or paste a code from anywhere — and reach your fleet from any network. End-to-end encrypted, over a relay you host yourself.</p>
+<h1 class="reveal d3">Any computer. Anywhere. No difference.</h1>
+<p class="sub reveal d4">Divergence makes the machine across the room — or across the country — indistinguishable from the one in front of you. Mac or Windows PC: pair once in person, or paste a code from anywhere, and your MacBook becomes it. End-to-end encrypted, over a relay you host yourself.</p>
 <form class="signup reveal d5" id="accessForm"
       action="https://docs.google.com/forms/d/e/1FAIpQLSeTF_SsNkDakEMvyhDyikStveg8rNuT6QUClSN9Xz0tKnuiUw/formResponse"
       method="POST" target="hidden_iframe">
@@ -456,21 +468,31 @@ animation:rise 1.05s var(--ease) forwards;
 <div class="form-note reveal d5">Free while in beta</div>
 <div class="form-thanks reveal d5" id="formThanks">Thank you — you're on the list. We'll be in touch.</div>
 <div class="showcase reveal d6">
+<!-- Proof first: lead with the REAL Mac-to-Mac demo. The Mac->Windows placeholder
+     sits below until its film lands, then the two swap order. -->
 <div class="media">
 <video src="assets/hero-demo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Divergence demo: connect from one Mac to another, then disconnect"></video>
 </div>
-<div class="media-caption">A full desktop, carried over a relay you own</div>
+<div class="media-caption">A full Mac desktop, carried over a relay you own</div>
+<div class="media" style="margin-top:clamp(1.6rem,3vw,2.4rem);">
+<div class="placeholder">
+<div class="glyph"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></div>
+Mac &rarr; Windows &middot; connection film coming soon
+</div>
+<div class="frameline"><span class="live"><span class="pulse"></span>Mac &rarr; Windows</span><span>Relay you own</span></div>
+</div>
+<div class="media-caption">Your MacBook, driving a Windows PC — over the same relay</div>
 </div>
 </div>
 <div class="metastrip reveal d7" style="width:100%;align-self:stretch;">
 <div class="row">
-<span class="metaitem live"><span class="pulse"></span>Mac-native</span>
+<span class="metaitem live"><span class="pulse"></span>Mac &amp; Windows</span>
+<span class="metaitem">Protocol-agnostic</span>
 <span class="metaitem">Self-hosted relay</span>
 <span class="metaitem">End-to-end encrypted</span>
 <span class="metaitem">Cross-NAT</span>
 <span class="metaitem">Pair-once</span>
-<span class="metaitem">Zero-copy Metal</span>
-<span class="metaitem">Swift + Metal</span>
+<span class="metaitem">Native on both ends</span>
 </div>
 </div>
 </section>
@@ -478,18 +500,18 @@ animation:rise 1.05s var(--ease) forwards;
 <div class="wrap">
 <div class="caphead obs">
 <div class="eyebrow">What it is, today</div>
-<h2>A remote desktop that disappears — the picture is native, pairing is one tap, and the relay between your machines is yours.</h2>
+<h2>A remote desktop that disappears — the picture is native, the machine on the far end can be a Mac or a Windows PC, and the relay between them is yours.</h2>
 </div>
 <div class="capgrid obs">
 <div class="cap">
 <div class="idx">01</div>
 <h3>Boundless native picture</h3>
-<p>Hardware-decoded H.264 renders edge to edge through a zero-copy Metal compositor — retina-correct, multi-monitor, no window chrome, no seam. The remote machine looks like the one in front of you.</p>
+<p>Hardware-decoded H.264 renders edge to edge through a zero-copy Metal compositor — retina-correct, multi-monitor, no window chrome, no seam. Whether the far machine is a Mac or a Windows PC, it looks like the one in front of you.</p>
 </div>
 <div class="cap">
 <div class="idx">02</div>
 <h3>Pair once, anywhere</h3>
-<p>Hand off a key in person with AirDrop, or paste a 72-character code from Messages, Mail, or any text channel. Your fleet — every paired Mac — appears wherever you are.</p>
+<p>Hand off a key in person with AirDrop, or paste a 72-character code from Messages, Mail, or any text channel. Your fleet — every paired machine, Mac or Windows — appears wherever you are.</p>
 </div>
 <div class="cap">
 <div class="idx">03</div>
@@ -529,18 +551,19 @@ animation:rise 1.05s var(--ease) forwards;
 <circle class="canopy" cx="64" cy="78" r="28"/><circle class="canopy" cx="120" cy="60" r="30"/>
 <circle class="canopy" cx="176" cy="78" r="28"/><circle class="base" cx="120" cy="132" r="32"/>
 </svg>
-<div class="dlabel">Another Mac</div>
+<div class="dlabel">Mac or Windows</div>
 <div class="dsub">Decrypt &middot; decode<br/>render</div>
 </div>
 </div>
 <div class="spec obs">
-<div class="specitem"><div class="k">Video</div><div class="v">Hardware-decoded H.264 via VideoToolbox, composited zero-copy on Metal.</div></div>
-<div class="specitem"><div class="k">Capture</div><div class="v">ScreenCaptureKit on the native path — retina-correct, multi-monitor.</div></div>
-<div class="specitem"><div class="k">Encryption</div><div class="v">ChaCha20-Poly1305, end to end. The relay never holds a key.</div></div>
+<div class="specitem"><div class="k">Video</div><div class="v">Hardware-decoded H.264 — VideoToolbox on Mac, NVENC on Windows — composited zero-copy on Metal.</div></div>
+<div class="specitem"><div class="k">Capture</div><div class="v">ScreenCaptureKit on the Mac; a streamed virtual display on Windows — retina-correct, multi-monitor.</div></div>
+<div class="specitem"><div class="k">Encryption</div><div class="v">Noise&nbsp;XX + ChaCha20-Poly1305, end to end. The relay never holds a key.</div></div>
 <div class="specitem"><div class="k">Transport</div><div class="v">UDP-direct on the LAN, TCP over your relay across NAT — chosen automatically.</div></div>
-<div class="specitem"><div class="k">Trust</div><div class="v">SPKI certificate pinning to your own box. Fails closed on mismatch.</div></div>
-<div class="specitem"><div class="k">Stack</div><div class="v">Swift + Metal, Mac-native end to end.</div></div>
+<div class="specitem"><div class="k">Trust</div><div class="v">Keys pinned to your own machines, trust-on-first-use. Fails closed on mismatch.</div></div>
+<div class="specitem"><div class="k">Stack</div><div class="v">Native on both ends — Swift&nbsp;+&nbsp;Metal on Mac, Direct2D&nbsp;+&nbsp;NVENC on Windows.</div></div>
 </div>
+<p style="margin-top:clamp(1.4rem,2.4vw,2rem);font-family:var(--mono);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);">Windows hosts require an NVIDIA GPU (NVENC) during beta.</p>
 </div>
 </section>
 </main>
