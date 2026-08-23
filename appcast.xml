@@ -4,6 +4,16 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 23 Aug 2026 17:56:48 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-25/Divergence-1.5.1-25.dmg" length="7757977" type="application/octet-stream" sparkle:edSignature="NMCAUyupDeZdMz2+VlnScWwjI+5BEwFktBOF4gqZqys67NGjOdEhln2mJJSiAtCzJnWPgj90vO1XdzzMAOoTCg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 23 Aug 2026 17:19:08 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>24</sparkle:version>
