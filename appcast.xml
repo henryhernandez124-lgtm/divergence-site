@@ -20,7 +20,7 @@
             <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-23/Divergence-1.5.1-22.dmg" length="7751864" type="application/octet-stream" sparkle:edSignature="erzvzQOn/IgBrFQeWX0EUy1zLWgQnPcx+mdRw/QSeffIHupIQQuwcVr89BQQpsdzoDwmdEfja5SsVnoZhYaRDQ=="/>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-22/Divergence-1.5.1-22.dmg" length="7751864" type="application/octet-stream" sparkle:edSignature="erzvzQOn/IgBrFQeWX0EUy1zLWgQnPcx+mdRw/QSeffIHupIQQuwcVr89BQQpsdzoDwmdEfja5SsVnoZhYaRDQ=="/>
         </item>
     </channel>
 </rss>
