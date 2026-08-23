@@ -6,7 +6,6 @@
             <title>1.5.1</title>
             <pubDate>Sun, 23 Aug 2026 13:21:19 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
-            <sparkle:channel>beta</sparkle:channel>
             <sparkle:version>23</sparkle:version>
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
@@ -16,7 +15,6 @@
             <title>1.5.1</title>
             <pubDate>Sun, 23 Aug 2026 13:03:35 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
-            <sparkle:channel>beta</sparkle:channel>
             <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
