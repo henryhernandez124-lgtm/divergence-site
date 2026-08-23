@@ -4,13 +4,23 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 23 Aug 2026 13:21:19 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-23/Divergence-1.5.1-23.dmg" length="7751811" type="application/octet-stream" sparkle:edSignature="+wfye35OWgJundc3PGro5kBqDMmXTjAHbqQGGADvEPy84MIqfrc8kNtn2k4jmgF6yp6JTo95PD73sB5P2clZCQ=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 23 Aug 2026 13:03:35 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:channel>beta</sparkle:channel>
             <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-22/Divergence-1.5.1-22.dmg" length="7751864" type="application/octet-stream" sparkle:edSignature="erzvzQOn/IgBrFQeWX0EUy1zLWgQnPcx+mdRw/QSeffIHupIQQuwcVr89BQQpsdzoDwmdEfja5SsVnoZhYaRDQ=="/>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-23/Divergence-1.5.1-22.dmg" length="7751864" type="application/octet-stream" sparkle:edSignature="erzvzQOn/IgBrFQeWX0EUy1zLWgQnPcx+mdRw/QSeffIHupIQQuwcVr89BQQpsdzoDwmdEfja5SsVnoZhYaRDQ=="/>
         </item>
     </channel>
 </rss>
