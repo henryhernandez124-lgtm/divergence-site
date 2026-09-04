@@ -4,6 +4,15 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Fri, 04 Sep 2026 16:27:42 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-68/Divergence-1.5.1-68.dmg" length="9498247" type="application/octet-stream" sparkle:edSignature="ylH/qUoyGvwQVG3zOE211yxSOJZQEkMh7gNEfW6TQ2BFNSLAu8shYyUG+Yq5mwvk/LzMxExTARo2UtXOHWO3Ag=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Mon, 31 Aug 2026 01:20:08 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>35</sparkle:version>
@@ -19,15 +28,6 @@
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-32/Divergence-1.5.1-32.dmg" length="9291608" type="application/octet-stream" sparkle:edSignature="f4v0+6EiccGbOOW7wUyf0CyJ7+TafHuRtKr8fpY3V/itILzmmm31pjid6XUYAbYELL9BvyrLOQjPjF8N0W9TBw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Mon, 24 Aug 2026 22:17:06 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-26/Divergence-1.5.1-26.dmg" length="9275405" type="application/octet-stream" sparkle:edSignature="METRZyhX2HfHIXbCq/H7hwhwlUC3ZmyPrLq9GUywYCajeIDQbtSbyqAV7ara5jpLmc+/GUpaBD9zwAx7k2FvBw=="/>
         </item>
     </channel>
 </rss>
