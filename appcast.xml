@@ -4,6 +4,30 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 09:47:21 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>69</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (69)</h3>
+<ul>
+  <li><strong>Crash reporting can now be turned off.</strong> Settings &rarr; General &rarr;
+      Diagnostics has a working switch. Earlier builds sent crash reports with no way to decline
+      and no indication they were doing it.</li>
+  <li><strong>A notice on first launch says what is sent.</strong> Stack traces, your macOS version
+      and a rotating pseudonym &mdash; never your name, account, IP address, or a hardware
+      identifier. The notice can turn reporting off directly; it does not block sign-in.</li>
+  <li><strong>What &ldquo;off&rdquo; means.</strong> New reports stop immediately. A report already
+      written to the offline queue may still be sent once.</li>
+  <li>Nothing else in this build changes how a session looks or behaves. Known, unchanged from
+      (68): <strong>in a windowed session the image is still scaled down slightly</strong> and looks
+      softest there. Fullscreen is 1:1 and sharpest.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-69/Divergence-1.5.1-69.dmg" length="9523246" type="application/octet-stream" sparkle:edSignature="hEReR9KIOtbbprKukebWUTZ+Kkz+WqsjgNaQZD6RN+7HlM2znEizCc26zbHpSfl5COxj0++vCj0DxTrTccnNCg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Fri, 04 Sep 2026 16:27:42 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>68</sparkle:version>
@@ -19,15 +43,6 @@
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-35/Divergence-1.5.1-35.dmg" length="9279149" type="application/octet-stream" sparkle:edSignature="08onPJmTTeyFIOpvd88HlBPXGNRXc9uldqHfjmsExEK+Z7JhTiyEgoUb8hLwCy8T/IHwgmmMEEpJvghd8QQbAg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Fri, 28 Aug 2026 14:44:31 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>32</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-32/Divergence-1.5.1-32.dmg" length="9291608" type="application/octet-stream" sparkle:edSignature="f4v0+6EiccGbOOW7wUyf0CyJ7+TafHuRtKr8fpY3V/itILzmmm31pjid6XUYAbYELL9BvyrLOQjPjF8N0W9TBw=="/>
         </item>
     </channel>
 </rss>
