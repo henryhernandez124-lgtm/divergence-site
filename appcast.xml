@@ -4,6 +4,30 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 19:11:12 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>77</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (77)</h3>
+<ul>
+  <li><strong>PCs on your network now show under &ldquo;On this network&rdquo;.</strong> A Windows PC
+      never appeared there, however local it was, because the section was really listing
+      Mac-discovered machines. It now lists machines addressed on your own network, whichever kind
+      they are.</li>
+  <li><strong>Saved connections are separate again, and Remove sticks.</strong> If you saved the same
+      machine more than once, those entries were being merged into a single tile &mdash; so removing
+      it deleted one entry and the tile came back under another name. <strong>You may now see more
+      tiles than before: one per saved connection.</strong> That is deliberate, and it is what lets
+      you remove each one individually.</li>
+  <li>Pairing no longer creates a duplicate &ldquo;Paired Mac&rdquo; tile, and existing duplicates are
+      merged on first launch (your device list is backed up first).</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-77/Divergence-1.5.1-77.dmg" length="9579274" type="application/octet-stream" sparkle:edSignature="I5Q0cq7yOPcHPGa+QcYcXPG8hG3hjw1mYNZHmdCR/za9AiGx4QA1HX8bHf/j55nKBJeuQ18r5y2039MKz+I8Bw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 13:30:10 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>74</sparkle:version>
@@ -38,24 +62,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-73/Divergence-1.5.1-73.dmg" length="9546456" type="application/octet-stream" sparkle:edSignature="pgXkKBfnfwMkkroPOE7cYmBti/F0bFiZZ7u+9Ug70pGqy/9BA1NG9mqIGsRD7NJdkEACl5aZuLU/AI5Trv/ABA=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 12:33:38 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>72</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (72)</h3>
-<ul>
-  <li><strong>Fixes a window-sizing bug introduced in (70).</strong> On a Mac with several paired
-      devices the window grew taller than the screen, which pushed the launch animation half off the
-      bottom edge and hid the crash-reporting notice entirely unless you were in fullscreen.</li>
-  <li>The window now opens and resizes normally regardless of how many devices you have paired.</li>
-  <li>Nothing else in this build changes how a session looks or behaves.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-72/Divergence-1.5.1-72.dmg" length="9525757" type="application/octet-stream" sparkle:edSignature="WH3N8r0lnBAbGsAR7yO93T5h+SuXJNgYS55hVcMeaVQd4YhOhQIl/uma/eVzpArFHI4nw08V0ouI19Mt4booBw=="/>
         </item>
     </channel>
 </rss>
