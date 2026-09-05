@@ -4,6 +4,23 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 13:30:10 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>74</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (74)</h3>
+<ul>
+  <li><strong>Device status numbers work again.</strong> CPU, memory, uptime and battery on the
+      device cards have been blank since late August &mdash; a security setting was removed from the
+      app as unused when it was in fact required for status reporting. Restored.</li>
+  <li>Nothing else in this build changes how a session looks or behaves.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-74/Divergence-1.5.1-74.dmg" length="9546526" type="application/octet-stream" sparkle:edSignature="9JL4bwkEwZc+MnXX7UzHAeD9IHVPODQj4BP2WQCaSGVduUV9eR1BjMqz73ctnTA/aijamjCAri6OKsm2r3V5Aw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 12:59:05 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>73</sparkle:version>
@@ -39,24 +56,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-72/Divergence-1.5.1-72.dmg" length="9525757" type="application/octet-stream" sparkle:edSignature="WH3N8r0lnBAbGsAR7yO93T5h+SuXJNgYS55hVcMeaVQd4YhOhQIl/uma/eVzpArFHI4nw08V0ouI19Mt4booBw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 11:56:41 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>71</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (71)</h3>
-<ul>
-  <li><strong>The crash-reporting notice no longer covers your devices.</strong> In (70) it floated
-      over the middle of the device list and could sit on top of a card&rsquo;s name and its
-      &ldquo;Tap to link securely&rdquo; button. It now sits in the bottom-left corner with the list
-      resized around it, so nothing is hidden behind it.</li>
-  <li>Nothing else in this build changes how a session looks or behaves.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-71/Divergence-1.5.1-71.dmg" length="9525190" type="application/octet-stream" sparkle:edSignature="ct3eALhQv/XZ7xjRHtkDWMlOIIybTOl1ef6TGFkE9VdZxHd09FNUAWrGT7FWh36M8aSKEQ1awOFr6MSoQSGtAw=="/>
         </item>
     </channel>
 </rss>
