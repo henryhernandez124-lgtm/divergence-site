@@ -4,6 +4,24 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 12:33:38 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>72</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (72)</h3>
+<ul>
+  <li><strong>Fixes a window-sizing bug introduced in (70).</strong> On a Mac with several paired
+      devices the window grew taller than the screen, which pushed the launch animation half off the
+      bottom edge and hid the crash-reporting notice entirely unless you were in fullscreen.</li>
+  <li>The window now opens and resizes normally regardless of how many devices you have paired.</li>
+  <li>Nothing else in this build changes how a session looks or behaves.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-72/Divergence-1.5.1-72.dmg" length="9525757" type="application/octet-stream" sparkle:edSignature="WH3N8r0lnBAbGsAR7yO93T5h+SuXJNgYS55hVcMeaVQd4YhOhQIl/uma/eVzpArFHI4nw08V0ouI19Mt4booBw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 11:56:41 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>71</sparkle:version>
@@ -39,30 +57,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-70/Divergence-1.5.1-70.dmg" length="9524312" type="application/octet-stream" sparkle:edSignature="N954Dd/0YdJW27WzCjCrB8m1+7t2OrqLwbwS2dTCTA96dtlDUUkepH95eZlb2KDr8r4uH7opGq41lK3HtW71Bg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 09:47:21 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>69</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (69)</h3>
-<ul>
-  <li><strong>Crash reporting can now be turned off.</strong> Settings &rarr; General &rarr;
-      Diagnostics has a working switch. Earlier builds sent crash reports with no way to decline
-      and no indication they were doing it.</li>
-  <li><strong>A notice on first launch says what is sent.</strong> Stack traces, your macOS version
-      and a rotating pseudonym &mdash; never your name, account, IP address, or a hardware
-      identifier. The notice can turn reporting off directly; it does not block sign-in.</li>
-  <li><strong>What &ldquo;off&rdquo; means.</strong> New reports stop immediately. A report already
-      written to the offline queue may still be sent once.</li>
-  <li>Nothing else in this build changes how a session looks or behaves. Known, unchanged from
-      (68): <strong>in a windowed session the image is still scaled down slightly</strong> and looks
-      softest there. Fullscreen is 1:1 and sharpest.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-69/Divergence-1.5.1-69.dmg" length="9523246" type="application/octet-stream" sparkle:edSignature="hEReR9KIOtbbprKukebWUTZ+Kkz+WqsjgNaQZD6RN+7HlM2znEizCc26zbHpSfl5COxj0++vCj0DxTrTccnNCg=="/>
         </item>
     </channel>
 </rss>
