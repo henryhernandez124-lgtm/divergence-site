@@ -4,6 +4,26 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 12:59:05 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>73</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (73)</h3>
+<ul>
+  <li><strong>Fixes a misleading message in Settings.</strong> The connection test could report
+      &ldquo;Reachable but pin mismatch&rdquo; for network failures that had nothing to do with
+      certificates. It now names what actually failed.</li>
+  <li><strong>Better self-diagnosis.</strong> When a Mac stops reporting its status, it now records
+      why in its own log instead of failing silently &mdash; so a problem can be diagnosed from a
+      log you send us rather than by asking you to run anything.</li>
+  <li>Nothing else in this build changes how a session looks or behaves.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-73/Divergence-1.5.1-73.dmg" length="9546456" type="application/octet-stream" sparkle:edSignature="pgXkKBfnfwMkkroPOE7cYmBti/F0bFiZZ7u+9Ug70pGqy/9BA1NG9mqIGsRD7NJdkEACl5aZuLU/AI5Trv/ABA=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 12:33:38 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>72</sparkle:version>
@@ -37,26 +57,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-71/Divergence-1.5.1-71.dmg" length="9525190" type="application/octet-stream" sparkle:edSignature="ct3eALhQv/XZ7xjRHtkDWMlOIIybTOl1ef6TGFkE9VdZxHd09FNUAWrGT7FWh36M8aSKEQ1awOFr6MSoQSGtAw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 11:25:23 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>70</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (70)</h3>
-<ul>
-  <li><strong>The crash-reporting notice now reaches everyone.</strong> In (69) it appeared only on
-      the sign-in screen, so if you were already signed in when you updated, you never saw it. It
-      now appears once, on first launch, whichever screen you land on.</li>
-  <li><strong>If you already decided, nothing asks again.</strong> Dismissing the notice, or
-      changing the switch in Settings &rarr; General &rarr; Diagnostics, is remembered and the
-      notice stays gone.</li>
-  <li>Nothing else in this build changes how a session looks or behaves.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-70/Divergence-1.5.1-70.dmg" length="9524312" type="application/octet-stream" sparkle:edSignature="N954Dd/0YdJW27WzCjCrB8m1+7t2OrqLwbwS2dTCTA96dtlDUUkepH95eZlb2KDr8r4uH7opGq41lK3HtW71Bg=="/>
         </item>
     </channel>
 </rss>
