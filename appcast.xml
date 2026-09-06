@@ -4,6 +4,29 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 05 Sep 2026 23:40:25 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>78</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (78)</h3>
+<ul>
+  <li><strong>Divergence has a light mode.</strong> Open Settings and choose
+      <strong>General &rarr; Appearance</strong>: <em>System</em>, <em>Light</em> or <em>Dark</em>.
+      It is set to <strong>System</strong>, so unless your Mac is set to Light you will not see any
+      change &mdash; Divergence looks exactly as it did.</li>
+  <li><strong>System keeps up with your Mac.</strong> If your Mac switches between Light and Dark
+      on its own at sunset, Divergence switches with it while it is open. No restart, and the
+      Settings window changes along with everything else.</li>
+  <li>In Light, each machine tile carries a tint for its platform, and the status colours
+      &mdash; &ldquo;Not encrypted yet&rdquo;, reachability, latency &mdash; were re-tuned so they
+      stay readable against the lighter background.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-78/Divergence-1.5.1-78.dmg" length="9605526" type="application/octet-stream" sparkle:edSignature="mblrgf8tXuFviK7l9pJcGB2QAdvIXMLd2Nt2BCtPCRMyrS97GJD8AbfW4H0zOxtpHgbOH0o3Jj8pWZRJwwoGAg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 19:11:12 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>77</sparkle:version>
@@ -42,26 +65,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-74/Divergence-1.5.1-74.dmg" length="9546526" type="application/octet-stream" sparkle:edSignature="9JL4bwkEwZc+MnXX7UzHAeD9IHVPODQj4BP2WQCaSGVduUV9eR1BjMqz73ctnTA/aijamjCAri6OKsm2r3V5Aw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 12:59:05 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>73</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (73)</h3>
-<ul>
-  <li><strong>Fixes a misleading message in Settings.</strong> The connection test could report
-      &ldquo;Reachable but pin mismatch&rdquo; for network failures that had nothing to do with
-      certificates. It now names what actually failed.</li>
-  <li><strong>Better self-diagnosis.</strong> When a Mac stops reporting its status, it now records
-      why in its own log instead of failing silently &mdash; so a problem can be diagnosed from a
-      log you send us rather than by asking you to run anything.</li>
-  <li>Nothing else in this build changes how a session looks or behaves.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-73/Divergence-1.5.1-73.dmg" length="9546456" type="application/octet-stream" sparkle:edSignature="pgXkKBfnfwMkkroPOE7cYmBti/F0bFiZZ7u+9Ug70pGqy/9BA1NG9mqIGsRD7NJdkEACl5aZuLU/AI5Trv/ABA=="/>
         </item>
     </channel>
 </rss>
