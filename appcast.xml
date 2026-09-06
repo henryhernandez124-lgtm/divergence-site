@@ -4,6 +4,26 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 13:44:53 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>82</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (82)</h3>
+<ul>
+  <li><strong>Your Mac stays reachable more consistently.</strong> It was briefly dropping and
+      re-establishing its connection to the relay around thirty times an hour, reacting to network
+      changes that did not actually affect it &mdash; and during each gap another machine trying to
+      reach it would be told it was offline. It now checks whether anything really changed first.</li>
+  <li><strong>Disconnections say why they happened.</strong> When a session ended, the log recorded
+      it as user-initiated no matter what actually caused it. It now names the real reason, which
+      makes a dropped session something we can diagnose from a log rather than guess at.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-82/Divergence-1.5.1-82.dmg" length="9638641" type="application/octet-stream" sparkle:edSignature="y3i0JXZMVJQsInJcVDYwljIE5sJacZ0mIBD6Zmn/ll15e4Q2v/PwIPKnsnXlzbqVhFPBRvWljcK4YqBHsgYWBg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 13:17:08 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>81</sparkle:version>
@@ -39,24 +59,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-80/Divergence-1.5.1-80.dmg" length="9634692" type="application/octet-stream" sparkle:edSignature="u6tSPwECNNtk+5l8pFQbSrBc8Fw6/c1Ph8zrDcSGmXwOj9XnH9bEnGcGHV7KjlhmUnkPQbeYjYxXF8Zlr6gxCQ=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 02:19:57 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>79</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (79)</h3>
-<ul>
-  <li><strong>Connections recover faster when a Mac changes networks.</strong> Moving between Wi-Fi
-      networks &mdash; or on and off a phone hotspot &mdash; could previously leave a Mac looking
-      reachable for up to a minute after it was not, so anyone trying to connect to it in that
-      window was turned away. It now notices the change straight away and re-establishes itself on
-      the new network.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-79/Divergence-1.5.1-79.dmg" length="9626585" type="application/octet-stream" sparkle:edSignature="ULZncvLFIkSpE8aSZjMGcQ4rBXsBNVNnHo/eX/FSjT+We/IFMmV74v2ArBsBBXeCrNmt1IJQoaEFnQ0LxzhUCg=="/>
         </item>
     </channel>
 </rss>
