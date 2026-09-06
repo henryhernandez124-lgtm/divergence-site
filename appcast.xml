@@ -4,6 +4,25 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 03:11:51 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>80</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (80)</h3>
+<ul>
+  <li><strong>Connection failures now say what went wrong.</strong> When a secure connection to
+      another Mac failed, Divergence reported &ldquo;offline or not paired&rdquo; regardless of the
+      real cause &mdash; including for problems it had already detected. It now names the specific
+      failure, on screen and in the logs.</li>
+  <li><strong>Refresh devices.</strong> A new button in the toolbar re-reads your device list, so a
+      machine you removed or re-added shows up without restarting Divergence.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-80/Divergence-1.5.1-80.dmg" length="9634692" type="application/octet-stream" sparkle:edSignature="u6tSPwECNNtk+5l8pFQbSrBc8Fw6/c1Ph8zrDcSGmXwOj9XnH9bEnGcGHV7KjlhmUnkPQbeYjYxXF8Zlr6gxCQ=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 02:19:57 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>79</sparkle:version>
@@ -42,30 +61,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-78/Divergence-1.5.1-78.dmg" length="9605526" type="application/octet-stream" sparkle:edSignature="mblrgf8tXuFviK7l9pJcGB2QAdvIXMLd2Nt2BCtPCRMyrS97GJD8AbfW4H0zOxtpHgbOH0o3Jj8pWZRJwwoGAg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 19:11:12 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>77</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (77)</h3>
-<ul>
-  <li><strong>PCs on your network now show under &ldquo;On this network&rdquo;.</strong> A Windows PC
-      never appeared there, however local it was, because the section was really listing
-      Mac-discovered machines. It now lists machines addressed on your own network, whichever kind
-      they are.</li>
-  <li><strong>Saved connections are separate again, and Remove sticks.</strong> If you saved the same
-      machine more than once, those entries were being merged into a single tile &mdash; so removing
-      it deleted one entry and the tile came back under another name. <strong>You may now see more
-      tiles than before: one per saved connection.</strong> That is deliberate, and it is what lets
-      you remove each one individually.</li>
-  <li>Pairing no longer creates a duplicate &ldquo;Paired Mac&rdquo; tile, and existing duplicates are
-      merged on first launch (your device list is backed up first).</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-77/Divergence-1.5.1-77.dmg" length="9579274" type="application/octet-stream" sparkle:edSignature="I5Q0cq7yOPcHPGa+QcYcXPG8hG3hjw1mYNZHmdCR/za9AiGx4QA1HX8bHf/j55nKBJeuQ18r5y2039MKz+I8Bw=="/>
         </item>
     </channel>
 </rss>
