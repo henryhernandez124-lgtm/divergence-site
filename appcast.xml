@@ -4,6 +4,25 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 13:17:08 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>81</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (81)</h3>
+<ul>
+  <li><strong>Macs can connect to each other again.</strong> A secure connection between two Macs
+      could fail every time, reporting the other machine as offline or not paired when it was
+      neither. Both machines were identifying themselves correctly &mdash; Divergence was comparing
+      the two forms of the same identifier as though they were different machines.</li>
+  <li>If one Mac is updated and the other is not, connections between them start working again as
+      soon as <strong>either</strong> side is on this version.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-81/Divergence-1.5.1-81.dmg" length="9636859" type="application/octet-stream" sparkle:edSignature="hSynkhouaSMyxRL2ZRMv3KJWs7OwsaQBXnMFIIDUmWCtooh2NXNxpdFUnM94UHg1AREEdkut7tqJ2nnvbWanAA=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 03:11:51 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>80</sparkle:version>
@@ -38,29 +57,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-79/Divergence-1.5.1-79.dmg" length="9626585" type="application/octet-stream" sparkle:edSignature="ULZncvLFIkSpE8aSZjMGcQ4rBXsBNVNnHo/eX/FSjT+We/IFMmV74v2ArBsBBXeCrNmt1IJQoaEFnQ0LxzhUCg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 23:40:25 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>78</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (78)</h3>
-<ul>
-  <li><strong>Divergence has a light mode.</strong> Open Settings and choose
-      <strong>General &rarr; Appearance</strong>: <em>System</em>, <em>Light</em> or <em>Dark</em>.
-      It is set to <strong>System</strong>, so unless your Mac is set to Light you will not see any
-      change &mdash; Divergence looks exactly as it did.</li>
-  <li><strong>System keeps up with your Mac.</strong> If your Mac switches between Light and Dark
-      on its own at sunset, Divergence switches with it while it is open. No restart, and the
-      Settings window changes along with everything else.</li>
-  <li>In Light, each machine tile carries a tint for its platform, and the status colours
-      &mdash; &ldquo;Not encrypted yet&rdquo;, reachability, latency &mdash; were re-tuned so they
-      stay readable against the lighter background.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-78/Divergence-1.5.1-78.dmg" length="9605526" type="application/octet-stream" sparkle:edSignature="mblrgf8tXuFviK7l9pJcGB2QAdvIXMLd2Nt2BCtPCRMyrS97GJD8AbfW4H0zOxtpHgbOH0o3Jj8pWZRJwwoGAg=="/>
         </item>
     </channel>
 </rss>
