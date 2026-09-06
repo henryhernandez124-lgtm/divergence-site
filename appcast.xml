@@ -4,6 +4,24 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 02:19:57 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>79</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (79)</h3>
+<ul>
+  <li><strong>Connections recover faster when a Mac changes networks.</strong> Moving between Wi-Fi
+      networks &mdash; or on and off a phone hotspot &mdash; could previously leave a Mac looking
+      reachable for up to a minute after it was not, so anyone trying to connect to it in that
+      window was turned away. It now notices the change straight away and re-establishes itself on
+      the new network.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-79/Divergence-1.5.1-79.dmg" length="9626585" type="application/octet-stream" sparkle:edSignature="ULZncvLFIkSpE8aSZjMGcQ4rBXsBNVNnHo/eX/FSjT+We/IFMmV74v2ArBsBBXeCrNmt1IJQoaEFnQ0LxzhUCg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sat, 05 Sep 2026 23:40:25 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>78</sparkle:version>
@@ -48,23 +66,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-77/Divergence-1.5.1-77.dmg" length="9579274" type="application/octet-stream" sparkle:edSignature="I5Q0cq7yOPcHPGa+QcYcXPG8hG3hjw1mYNZHmdCR/za9AiGx4QA1HX8bHf/j55nKBJeuQ18r5y2039MKz+I8Bw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sat, 05 Sep 2026 13:30:10 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>74</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (74)</h3>
-<ul>
-  <li><strong>Device status numbers work again.</strong> CPU, memory, uptime and battery on the
-      device cards have been blank since late August &mdash; a security setting was removed from the
-      app as unused when it was in fact required for status reporting. Restored.</li>
-  <li>Nothing else in this build changes how a session looks or behaves.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-74/Divergence-1.5.1-74.dmg" length="9546526" type="application/octet-stream" sparkle:edSignature="9JL4bwkEwZc+MnXX7UzHAeD9IHVPODQj4BP2WQCaSGVduUV9eR1BjMqz73ctnTA/aijamjCAri6OKsm2r3V5Aw=="/>
         </item>
     </channel>
 </rss>
