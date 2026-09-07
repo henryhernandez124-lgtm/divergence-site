@@ -4,6 +4,27 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 22:46:23 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>83</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (83)</h3>
+<ul>
+  <li><strong>Pairing is easier to find.</strong> The paste-a-code field is now on the Sharing tab
+      directly, next to &ldquo;Copy pairing code&rdquo;, instead of hidden behind a disclosure at the
+      bottom. Copy on one computer, paste on the other. Sending the key as a file still works and
+      sits just below.</li>
+  <li><strong>A new account is told what to do next.</strong> Signing in for the first time showed
+      two empty lists and nothing else. It now explains that an empty list is expected, and walks
+      through installing Divergence on the other computer, sharing the pairing code, and granting
+      the permissions a Mac needs in order to be viewed.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-83/Divergence-1.5.1-83.dmg" length="9656068" type="application/octet-stream" sparkle:edSignature="NQijTzQQvqD0h5xyG9tDtfXMquJ9+F9ylIMiZ0qu9VJ9UD8h2ofWWelVM+Afq9951PRpbw/O2J28QfpPmDeuAA=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 13:44:53 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>82</sparkle:version>
@@ -40,25 +61,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-81/Divergence-1.5.1-81.dmg" length="9636859" type="application/octet-stream" sparkle:edSignature="hSynkhouaSMyxRL2ZRMv3KJWs7OwsaQBXnMFIIDUmWCtooh2NXNxpdFUnM94UHg1AREEdkut7tqJ2nnvbWanAA=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 03:11:51 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>80</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (80)</h3>
-<ul>
-  <li><strong>Connection failures now say what went wrong.</strong> When a secure connection to
-      another Mac failed, Divergence reported &ldquo;offline or not paired&rdquo; regardless of the
-      real cause &mdash; including for problems it had already detected. It now names the specific
-      failure, on screen and in the logs.</li>
-  <li><strong>Refresh devices.</strong> A new button in the toolbar re-reads your device list, so a
-      machine you removed or re-added shows up without restarting Divergence.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-80/Divergence-1.5.1-80.dmg" length="9634692" type="application/octet-stream" sparkle:edSignature="u6tSPwECNNtk+5l8pFQbSrBc8Fw6/c1Ph8zrDcSGmXwOj9XnH9bEnGcGHV7KjlhmUnkPQbeYjYxXF8Zlr6gxCQ=="/>
         </item>
     </channel>
 </rss>
