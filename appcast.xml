@@ -4,6 +4,18 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Mon, 07 Sep 2026 00:00:57 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>85</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (85)</h3>
+<p>Wording refinements on the first-run screen. No functional changes.</p>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-85/Divergence-1.5.1-85.dmg" length="9646343" type="application/octet-stream" sparkle:edSignature="KU316aWmRUR8EBSK8gQUZwjRWBsNW5IG/3aTJbdZxZcRv4/h2iWqLDli58S7qJoHZShVKrowQqxCUmWbSpFXDw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 23:10:30 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>84</sparkle:version>
@@ -38,26 +50,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-83/Divergence-1.5.1-83.dmg" length="9656068" type="application/octet-stream" sparkle:edSignature="NQijTzQQvqD0h5xyG9tDtfXMquJ9+F9ylIMiZ0qu9VJ9UD8h2ofWWelVM+Afq9951PRpbw/O2J28QfpPmDeuAA=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 13:44:53 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>82</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (82)</h3>
-<ul>
-  <li><strong>Your Mac stays reachable more consistently.</strong> It was briefly dropping and
-      re-establishing its connection to the relay around thirty times an hour, reacting to network
-      changes that did not actually affect it &mdash; and during each gap another machine trying to
-      reach it would be told it was offline. It now checks whether anything really changed first.</li>
-  <li><strong>Disconnections say why they happened.</strong> When a session ended, the log recorded
-      it as user-initiated no matter what actually caused it. It now names the real reason, which
-      makes a dropped session something we can diagnose from a log rather than guess at.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-82/Divergence-1.5.1-82.dmg" length="9638641" type="application/octet-stream" sparkle:edSignature="y3i0JXZMVJQsInJcVDYwljIE5sJacZ0mIBD6Zmn/ll15e4Q2v/PwIPKnsnXlzbqVhFPBRvWljcK4YqBHsgYWBg=="/>
         </item>
     </channel>
 </rss>
