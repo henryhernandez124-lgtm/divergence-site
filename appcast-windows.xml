@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  THE DIVERGENCE WINDOWS UPDATE FEED.
+
+  This file is the source of truth. Publishing means copying it to divergence-site, which serves it
+  at https://divergenceapp.com/appcast-windows.xml : the URL compiled into R7 as
+  kUpdateFeedUrlCompiled, and the URL every install that ever receives a build will ask forever.
+
+  DO NOT HAND-EDIT ITEMS INTO IT. Items are written by make-appcast.ps1, which signs the enclosure
+  with the escrowed Ed25519 key and then verifies that signature against the public key COMPILED
+  INTO R7.exe before writing anything. A hand-added item skips both. The result of that is not a
+  broken feed somebody notices; it is a feed the client silently rejects or silently ignores, whose
+  only symptom is that no update ever installs.
+
+  Note also that an XML comment may not contain two consecutive hyphens, which is why this one has
+  none. A comment written with them does not warn anybody: it makes the whole feed unparseable, and
+  the client's report for an unparseable feed is the same "no updates" as for an empty one.
+
+  IT IS NO LONGER EMPTY. On 2026 09 07 the escrowed key was brought out, 1.0.301.0 (412edf6) was
+  signed, published and verified, and the key was overwritten and deleted from the build machine in
+  the same session. That was the first update ever delivered to Windows automatically; every build
+  before it was handed to a tester by hand.
+
+  The reasoning for the empty state is kept, because it governs any future gap between releases: an
+  empty channel is a valid appcast and a useful one. WinSparkle reports no updates available, which
+  is TRUE, and it keeps the feed's reachability testable separately from whether anything has been
+  published. A placeholder item would instead be a promise pointing at a file that does not exist.
+
+  DO NOT DELETE THE ENCLOSURE'S RELEASE. It lives on a divergence releases tag prefixed "win", in a
+  repository shared with the Mac whose tags are v1.5.x. That prefix is what stops a Windows
+  enclosure being swept up by somebody tidying "the old 1.0 releases". Deleting a release deletes
+  its assets, and this feed would go on pointing at them, on every installed copy, forever.
+-->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Divergence for Windows</title>
+    <link>https://divergenceapp.com/</link>
+    <description>Update feed for the Divergence Windows beta.</description>
+    <language>en</language>
+    <item>
+      <title>Divergence 1.0.301.0</title>
+      <pubDate>Mon, 07 Sep 2026 14:23:31 +0000</pubDate>
+      <sparkle:version>1.0.301.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.301.0</sparkle:shortVersionString>
+      <description><![CDATA[<h3>Divergence for Windows 1.0.301.0</h3>
+<p><b>This is the first update ever delivered to Windows automatically.</b> Every previous build was handed out by hand.</p>
+<ul>
+<li><b>Trackpad scrolling works.</b> Light scrolling used to produce nothing at all &mdash; small movements were discarded before they reached Windows. Nothing is discarded now, and the speed was tuned by hand until it felt right.</li>
+<li><b>The floating session window is gone.</b> It could not track display changes and rendered wrong when you changed resolution or swapped monitors. Session state now lives in the Divergence window, with the tray icon and taskbar button showing a session is running even when that window is closed.</li>
+<li><b>Ending a session no longer stops your PC accepting new ones.</b> Previously this was a lockout that could only be undone at the machine itself &mdash; so ending a session from a Mac elsewhere left that PC unreachable. It now ends the session and stays ready for the next one.</li>
+<li><b>&ldquo;Stop accepting sessions&rdquo;</b> is the deliberate version of that, and lives in the tray menu where it can only be reached from the machine itself.</li>
+</ul>
+<p>Scrolling too fast or too slow? It is adjustable without reinstalling and takes effect within a second:<br>
+<code>reg add HKCU\Software\HDZCapital\Divergence /v ScrollScale /t REG_DWORD /d 900 /f</code><br>
+Lower is faster; the default is 600. Please tell us the number you settle on.</p>
+<p>Known: this was tuned on a MacBook trackpad. If you drive Divergence with a <b>mouse wheel</b>, the speed will likely be wrong &mdash; please say so.</p>
+<p>Full release notes accompany the installer as <code>RELEASE-NOTE-412edf6.md</code>.</p>
+]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.301.0/DivergenceBetaSetup-412edf6.exe" length="27175192" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="yAsUY0SEoA1PryTJqNzsj4jo89+CCbH1VlI+sz8XgpHM8j7wD4q2EuJGIV78RdopmBn8gr/Ne7b5WtVbTdeLDw==" />
+    </item>
+  </channel>
+</rss>
