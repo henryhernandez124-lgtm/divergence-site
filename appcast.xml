@@ -4,6 +4,22 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sun, 06 Sep 2026 23:10:30 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>84</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (84)</h3>
+<ul>
+  <li><strong>Direct connections are now always used when available.</strong> Divergence sends video
+      over the fastest path it can establish between two machines, without a setting to get in the
+      way.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-84/Divergence-1.5.1-84.dmg" length="9646265" type="application/octet-stream" sparkle:edSignature="iusQsDNY9LCUPdtgeQY340f5rri6CUO2X4MFVvsne03jDdghaoZiNiAw6NmnxSMKQtd6rzkksSX1mGh+kWlrAw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Sun, 06 Sep 2026 22:46:23 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>83</sparkle:version>
@@ -42,25 +58,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-82/Divergence-1.5.1-82.dmg" length="9638641" type="application/octet-stream" sparkle:edSignature="y3i0JXZMVJQsInJcVDYwljIE5sJacZ0mIBD6Zmn/ll15e4Q2v/PwIPKnsnXlzbqVhFPBRvWljcK4YqBHsgYWBg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 13:17:08 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>81</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (81)</h3>
-<ul>
-  <li><strong>Macs can connect to each other again.</strong> A secure connection between two Macs
-      could fail every time, reporting the other machine as offline or not paired when it was
-      neither. Both machines were identifying themselves correctly &mdash; Divergence was comparing
-      the two forms of the same identifier as though they were different machines.</li>
-  <li>If one Mac is updated and the other is not, connections between them start working again as
-      soon as <strong>either</strong> side is on this version.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-81/Divergence-1.5.1-81.dmg" length="9636859" type="application/octet-stream" sparkle:edSignature="hSynkhouaSMyxRL2ZRMv3KJWs7OwsaQBXnMFIIDUmWCtooh2NXNxpdFUnM94UHg1AREEdkut7tqJ2nnvbWanAA=="/>
         </item>
     </channel>
 </rss>
