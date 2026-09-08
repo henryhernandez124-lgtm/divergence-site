@@ -4,6 +4,21 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Mon, 07 Sep 2026 23:07:24 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>86</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (86)</h3>
+<ul>
+<li>If switching displays fails, Divergence now says so instead of showing a frozen picture.</li>
+</ul>
+<p>Everything else in this build is internal.</p>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-86/Divergence-1.5.1-86.dmg" length="9662462" type="application/octet-stream" sparkle:edSignature="46rRPm/fnYu4/Rl6CHtAxsa0ZEL9fSYQ8aE/6Zg4yVzcZKR5D+52VQCTLLeask2URnr+7VqjQwClLq2/YTWPCw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Mon, 07 Sep 2026 00:00:57 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>85</sparkle:version>
@@ -29,27 +44,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-84/Divergence-1.5.1-84.dmg" length="9646265" type="application/octet-stream" sparkle:edSignature="iusQsDNY9LCUPdtgeQY340f5rri6CUO2X4MFVvsne03jDdghaoZiNiAw6NmnxSMKQtd6rzkksSX1mGh+kWlrAw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 22:46:23 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>83</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (83)</h3>
-<ul>
-  <li><strong>Pairing is easier to find.</strong> The paste-a-code field is now on the Sharing tab
-      directly, next to &ldquo;Copy pairing code&rdquo;, instead of hidden behind a disclosure at the
-      bottom. Copy on one computer, paste on the other. Sending the key as a file still works and
-      sits just below.</li>
-  <li><strong>A new account is told what to do next.</strong> Signing in for the first time showed
-      two empty lists and nothing else. It now explains that an empty list is expected, and walks
-      through installing Divergence on the other computer, sharing the pairing code, and granting
-      the permissions a Mac needs in order to be viewed.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-83/Divergence-1.5.1-83.dmg" length="9656068" type="application/octet-stream" sparkle:edSignature="NQijTzQQvqD0h5xyG9tDtfXMquJ9+F9ylIMiZ0qu9VJ9UD8h2ofWWelVM+Afq9951PRpbw/O2J28QfpPmDeuAA=="/>
         </item>
     </channel>
 </rss>
