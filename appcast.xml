@@ -4,6 +4,21 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Mon, 07 Sep 2026 23:30:12 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>87</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (87)</h3>
+<ul>
+<li>Fixes switching displays on Mac. In 86 a switch that worked was still reported as failed, and the display indicator jumped back. Please update.</li>
+</ul>
+<p>If you are on 86, switching displays is unreliable until you install this.</p>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-87/Divergence-1.5.1-87.dmg" length="9663671" type="application/octet-stream" sparkle:edSignature="fDY1DSzH8PTXcqxfQZXhY9Z1t/mHyDw1mWphhVGlGP7LFZ1wpo+MOt6XKK6pCgxVn9S2TLhniaBhgy8TdSPXBA=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Mon, 07 Sep 2026 23:07:24 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>86</sparkle:version>
@@ -28,22 +43,6 @@
 <p>Wording refinements on the first-run screen. No functional changes.</p>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-85/Divergence-1.5.1-85.dmg" length="9646343" type="application/octet-stream" sparkle:edSignature="KU316aWmRUR8EBSK8gQUZwjRWBsNW5IG/3aTJbdZxZcRv4/h2iWqLDli58S7qJoHZShVKrowQqxCUmWbSpFXDw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Sun, 06 Sep 2026 23:10:30 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>84</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (84)</h3>
-<ul>
-  <li><strong>Direct connections are now always used when available.</strong> Divergence sends video
-      over the fastest path it can establish between two machines, without a setting to get in the
-      way.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-84/Divergence-1.5.1-84.dmg" length="9646265" type="application/octet-stream" sparkle:edSignature="iusQsDNY9LCUPdtgeQY340f5rri6CUO2X4MFVvsne03jDdghaoZiNiAw6NmnxSMKQtd6rzkksSX1mGh+kWlrAw=="/>
         </item>
     </channel>
 </rss>
