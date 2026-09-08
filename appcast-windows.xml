@@ -38,6 +38,23 @@
     <description>Update feed for the Divergence Windows beta.</description>
     <language>en</language>
     <item>
+      <title>Divergence 1.0.315.0</title>
+      <pubDate>Tue, 08 Sep 2026 12:50:08 +0000</pubDate>
+      <sparkle:version>1.0.315.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.315.0</sparkle:shortVersionString>
+      <description><![CDATA[<h3>Divergence for Windows 1.0.315.0</h3>
+<ul>
+<li><b>Display switching recovers on its own.</b> Connecting could leave you looking at a frozen picture until you manually switched displays and switched back &mdash; the virtual display is briefly not ready to be captured when it first appears, and Divergence gave up after one attempt. It now waits for it, and if it still cannot, <b>it says so</b> instead of leaving you with a session that looks connected and shows nothing.</li>
+<li><b>Scrolling is faster, and light trackpad scrolling registers.</b> Small movements used to be discarded before they reached Windows. Still adjustable without reinstalling, and it takes effect within a second:<br>
+<code>reg add HKCU\Software\HDZCapital\Divergence /v ScrollScale /t REG_DWORD /d 900 /f</code><br>
+Lower is faster; the default is 600.</li>
+</ul>
+<p>Known: scrolling was tuned on a MacBook trackpad. If you drive Divergence with a <b>mouse wheel</b>, the speed will likely be wrong &mdash; please say so.</p>
+<p>Full release notes accompany the installer as <code>RELEASE-NOTE-e72f5f5.md</code>.</p>
+]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.315.0/DivergenceBetaSetup-e72f5f5.exe" length="27175856" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="I+syC2RrzZAN6PGzmTHUzxeEWJNt+qVFoH/JzUkdid2qNEmdfw9CLPFkMFc5f5cHcrQdcy8evpv8/hXUCH0/Aw==" />
+    </item>
+    <item>
       <title>Divergence 1.0.301.0</title>
       <pubDate>Mon, 07 Sep 2026 14:23:31 +0000</pubDate>
       <sparkle:version>1.0.301.0</sparkle:version>
