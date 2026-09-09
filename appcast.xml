@@ -4,6 +4,22 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Wed, 09 Sep 2026 01:03:05 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>88</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Divergence 1.5.1 (88)</h3>
+<ul>
+<li>The launcher menu now shows a map of the other machine's monitors, laid out the way they actually sit. Click one to switch to it.</li>
+<li>The same map is available in Divergence mode with ⌘⌥M, where the launcher menu can't be opened. Escape closes it; press Escape again to leave Divergence mode.</li>
+<li>On Windows hosts, right-clicking a window's title bar now offers "Send to Divergence display".</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-88/Divergence-1.5.1-88.dmg" length="9701532" type="application/octet-stream" sparkle:edSignature="/DH3Brz0MbMD3CcCZhOHxJxWlRhgqN8qhrK/FAdU9v2Tcz6p0X4lk8PekeUyeGQQQl4bj7FQZ65ueOy0ZR5ODA=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Mon, 07 Sep 2026 23:30:12 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>87</sparkle:version>
@@ -31,18 +47,6 @@
 <p>Everything else in this build is internal.</p>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-86/Divergence-1.5.1-86.dmg" length="9662462" type="application/octet-stream" sparkle:edSignature="46rRPm/fnYu4/Rl6CHtAxsa0ZEL9fSYQ8aE/6Zg4yVzcZKR5D+52VQCTLLeask2URnr+7VqjQwClLq2/YTWPCw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Mon, 07 Sep 2026 00:00:57 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>85</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (85)</h3>
-<p>Wording refinements on the first-run screen. No functional changes.</p>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-85/Divergence-1.5.1-85.dmg" length="9646343" type="application/octet-stream" sparkle:edSignature="KU316aWmRUR8EBSK8gQUZwjRWBsNW5IG/3aTJbdZxZcRv4/h2iWqLDli58S7qJoHZShVKrowQqxCUmWbSpFXDw=="/>
         </item>
     </channel>
 </rss>
