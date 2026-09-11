@@ -38,12 +38,12 @@
     <description>Update feed for the Divergence Windows beta.</description>
     <language>en</language>
     <item>
-      <title>Divergence 1.0.341.0</title>
-      <pubDate>Fri, 11 Sep 2026 18:58:16 +0000</pubDate>
-      <sparkle:version>1.0.341.0</sparkle:version>
-      <sparkle:shortVersionString>1.0.341.0</sparkle:shortVersionString>
-      <description><![CDATA[Divergence Windows beta 1.0.341.0.]]></description>
-      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.341.0/DivergenceBetaSetup-e43239d.exe" length="27207144" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="y+drPvlseiigATfryKl4hUFtIBHQYP7KbsR8+7vfVUXF90NafsCzthOuBTkzsj3Z/h5kjAnRViDXzrAay4FhAg==" />
+      <title>Divergence 1.0.342.0</title>
+      <pubDate>Fri, 11 Sep 2026 19:14:56 +0000</pubDate>
+      <sparkle:version>1.0.342.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.342.0</sparkle:shortVersionString>
+      <description><![CDATA[Divergence Windows beta 1.0.342.0.]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.342.0/DivergenceBetaSetup-461b1ae.exe" length="27206392" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="MFUk+uYKHLXfat9PBeizIoJTjLnUfu5B6/xhKq5M85L/emrkzpTbwycrFOPQKgM1SYhovY8ls8VbXEPQpBzWAA==" />
     </item>
     <item>
       <title>Divergence 1.0.339.0</title>
