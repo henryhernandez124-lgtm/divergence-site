@@ -4,6 +4,22 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Wed, 23 Sep 2026 17:40:36 -0400</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>95</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Beta build. Replaces build 94, which was withdrawn before release.</p>
+<ul>
+<li><strong>Fixes a crash during a session.</strong> A timing calculation on the drawing path could overflow and terminate the app after a few minutes of streaming. Found in testing; build 94 was never published.</li>
+<li><strong>Hardens six more places with the same flaw.</strong> The same unsafe time arithmetic appeared elsewhere, including one fed by a value the remote host sends back. All now handled safely.</li>
+<li><strong>No change to video decoding.</strong> The decode path is byte-for-byte identical to build 93.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-95/Divergence-1.5.1-95.dmg" length="9812239" type="application/octet-stream" sparkle:edSignature="q+ZtaJdQRipJfiE8N7QgBTFyLpxIfdi4EE4USw8OlE06S7D+aGSexfPHQrrsRLRTiLhapVmtTPR4cgpLB/ZwAg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Wed, 09 Sep 2026 01:03:05 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>88</sparkle:version>
@@ -32,21 +48,6 @@
 <p>If you are on 86, switching displays is unreliable until you install this.</p>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-87/Divergence-1.5.1-87.dmg" length="9663671" type="application/octet-stream" sparkle:edSignature="fDY1DSzH8PTXcqxfQZXhY9Z1t/mHyDw1mWphhVGlGP7LFZ1wpo+MOt6XKK6pCgxVn9S2TLhniaBhgy8TdSPXBA=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Mon, 07 Sep 2026 23:07:24 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>86</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (86)</h3>
-<ul>
-<li>If switching displays fails, Divergence now says so instead of showing a frozen picture.</li>
-</ul>
-<p>Everything else in this build is internal.</p>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-86/Divergence-1.5.1-86.dmg" length="9662462" type="application/octet-stream" sparkle:edSignature="46rRPm/fnYu4/Rl6CHtAxsa0ZEL9fSYQ8aE/6Zg4yVzcZKR5D+52VQCTLLeask2URnr+7VqjQwClLq2/YTWPCw=="/>
         </item>
     </channel>
 </rss>
