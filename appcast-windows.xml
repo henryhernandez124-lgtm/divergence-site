@@ -38,6 +38,14 @@
     <description>Update feed for the Divergence Windows beta.</description>
     <language>en</language>
     <item>
+      <title>Divergence 1.0.1044.0</title>
+      <pubDate>Wed, 11 Nov 2026 18:47:51 +0000</pubDate>
+      <sparkle:version>1.0.1044.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.1044.0</sparkle:shortVersionString>
+      <description><![CDATA[Quitting Divergence now stops everything, including the hosting service. No yellow border around your displays. When someone connects, you get a notice, a tray badge and Disconnect in the tray menu.]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.1044.0/DivergenceBetaSetup-6cc9c1b.exe" length="28898352" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="1OteLxoKCC8AqSIMEj93vc8Y0wsw5y+rEtXpd/rTQwHz6+LspzYatuOlW2MvlmkYbQVDMMwSIY0fpAZd3D1iDA==" sparkle:installerArguments="/SILENT" />
+    </item>
+    <item>
       <title>Divergence 1.0.344.0</title>
       <pubDate>Fri, 11 Sep 2026 20:10:03 +0000</pubDate>
       <sparkle:version>1.0.344.0</sparkle:version>
