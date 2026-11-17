@@ -38,6 +38,14 @@
     <description>Update feed for the Divergence Windows beta.</description>
     <language>en</language>
     <item>
+      <title>Divergence 1.0.1051.0</title>
+      <pubDate>Tue, 17 Nov 2026 00:14:23 +0000</pubDate>
+      <sparkle:version>1.0.1051.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.1051.0</sparkle:shortVersionString>
+      <description><![CDATA[If this PC's connection to the relay drops and the first tries to reconnect fail, Divergence now notices each failed try, gives each try at most 15 seconds, and tries again with backoff, instead of waiting until a restart. Each failed try is logged with its reason, and one line is logged when the PC is reachable through the relay again: how long it took and how many tries.]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.1051.0/DivergenceBetaSetup-0f9c51e.exe" length="28911424" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="g4owPw9Wbz34r0wV7JWTomPeCmvAgHBiJ+wPF3/JfHldkuNzYvqTfLlZ7UOnBhMWCcnaDjZ20SUQQyMpVXkFDg==" sparkle:installerArguments="/SILENT" />
+    </item>
+    <item>
       <title>Divergence 1.0.1044.0</title>
       <pubDate>Wed, 11 Nov 2026 18:47:51 +0000</pubDate>
       <sparkle:version>1.0.1044.0</sparkle:version>
