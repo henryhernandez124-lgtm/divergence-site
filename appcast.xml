@@ -4,6 +4,22 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Wed, 18 Nov 2026 13:13:18 -0500</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>139</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Beta build, made from code 7b54a9c5. The first published build since 95.</p>
+<ul>
+<li><strong>Tap-to-pair and Unpair.</strong> Pair your own devices with a tap. Unpair removes a pairing on both sides, and pairings stay with your account.</li>
+<li><strong>Faster sessions over the internet.</strong> More sessions connect directly instead of through the relay, at 60 frames per second, and typing and the mouse take the fast path with a reliable one behind it.</li>
+<li><strong>Better sound and picture between Macs.</strong> Compressed audio that travels with the video, HEVC where both Macs support it, and quicker recovery after a lost frame.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-139/Divergence-1.5.1-139.dmg" length="12190141" type="application/octet-stream" sparkle:edSignature="JJaPorg8jeDufdjorKCNUPSTE7XaRyT+8J+eT3H9WoNVip2sISjdPpUK1ECB2Z3WMp/FaKzUZ0Ga0khea8cMAg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Wed, 23 Sep 2026 17:40:36 -0400</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>95</sparkle:version>
@@ -33,21 +49,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-88/Divergence-1.5.1-88.dmg" length="9701532" type="application/octet-stream" sparkle:edSignature="/DH3Brz0MbMD3CcCZhOHxJxWlRhgqN8qhrK/FAdU9v2Tcz6p0X4lk8PekeUyeGQQQl4bj7FQZ65ueOy0ZR5ODA=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Mon, 07 Sep 2026 23:30:12 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>87</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (87)</h3>
-<ul>
-<li>Fixes switching displays on Mac. In 86 a switch that worked was still reported as failed, and the display indicator jumped back. Please update.</li>
-</ul>
-<p>If you are on 86, switching displays is unreliable until you install this.</p>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-87/Divergence-1.5.1-87.dmg" length="9663671" type="application/octet-stream" sparkle:edSignature="fDY1DSzH8PTXcqxfQZXhY9Z1t/mHyDw1mWphhVGlGP7LFZ1wpo+MOt6XKK6pCgxVn9S2TLhniaBhgy8TdSPXBA=="/>
         </item>
     </channel>
 </rss>
