@@ -4,6 +4,22 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Mon, 23 Nov 2026 13:03:48 -0500</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>140</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Beta build, made from code 40372aa4.</p>
+<ul>
+<li><strong>Know when a Mac can't be reached.</strong> A Mac running this version that is online but can't take a connection from outside its own network now says so on its tile, with the reason.</li>
+<li><strong>Your Mac's reachability in Settings.</strong> The Sharing tab says whether this Mac is reachable from anywhere or only on its own network, and why.</li>
+<li><strong>Sleeping Macs no longer hold a dead connection.</strong> A Mac that wakes briefly in the background while asleep no longer opens a connection it can't answer.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-140/Divergence-1.5.1-140.dmg" length="12206638" type="application/octet-stream" sparkle:edSignature="UvJqW6FIlQ8dOSatNWdclEV+xlReOCStIIURQBJdPyH6YnzqQWf60BegsrXtkMlaghRLXfajouFPOk+OvRTtCg=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Wed, 18 Nov 2026 13:13:18 -0500</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>139</sparkle:version>
@@ -33,22 +49,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-95/Divergence-1.5.1-95.dmg" length="9812239" type="application/octet-stream" sparkle:edSignature="q+ZtaJdQRipJfiE8N7QgBTFyLpxIfdi4EE4USw8OlE06S7D+aGSexfPHQrrsRLRTiLhapVmtTPR4cgpLB/ZwAg=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Wed, 09 Sep 2026 01:03:05 -0400</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>88</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Divergence 1.5.1 (88)</h3>
-<ul>
-<li>The launcher menu now shows a map of the other machine's monitors, laid out the way they actually sit. Click one to switch to it.</li>
-<li>The same map is available in Divergence mode with ⌘⌥M, where the launcher menu can't be opened. Escape closes it; press Escape again to leave Divergence mode.</li>
-<li>On Windows hosts, right-clicking a window's title bar now offers "Send to Divergence display".</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-88/Divergence-1.5.1-88.dmg" length="9701532" type="application/octet-stream" sparkle:edSignature="/DH3Brz0MbMD3CcCZhOHxJxWlRhgqN8qhrK/FAdU9v2Tcz6p0X4lk8PekeUyeGQQQl4bj7FQZ65ueOy0ZR5ODA=="/>
         </item>
     </channel>
 </rss>
