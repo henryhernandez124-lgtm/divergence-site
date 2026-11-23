@@ -38,6 +38,14 @@
     <description>Update feed for the Divergence Windows beta.</description>
     <language>en</language>
     <item>
+      <title>Divergence 1.0.1078.0</title>
+      <pubDate>Mon, 23 Nov 2026 19:19:11 +0000</pubDate>
+      <sparkle:version>1.0.1078.0</sparkle:version>
+      <sparkle:shortVersionString>1.0.1078.0</sparkle:shortVersionString>
+      <description><![CDATA[Only devices you allow can now type at this PC's lock screen or answer its administrator prompts. Allow one from the tray with "Allow a device to unlock this PC…", which also removes it. If you've unlocked this PC from a Mac before, allow that Mac once after updating. Connecting while this PC shows its password screen now shows that screen instead of no picture. With Divergence for Mac 139 or later, typing and clicks use the direct connection when there is one. If you turned crash reports off, that choice now also covers Divergence's background service.]]></description>
+      <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/win-1.0.1078.0/DivergenceBetaSetup-79bb87c.exe" length="29072800" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="lKvJpIKsZZt9eOkmEItYdJ2Nz0mlvbNal+iC6JogPrk7JYQ4Wbfb7UXW4roueQHN6TZQTw91UC6CfrcV+yPEAw==" sparkle:installerArguments="/SILENT" />
+    </item>
+    <item>
       <title>Divergence 1.0.1051.0</title>
       <pubDate>Tue, 17 Nov 2026 00:14:23 +0000</pubDate>
       <sparkle:version>1.0.1051.0</sparkle:version>
