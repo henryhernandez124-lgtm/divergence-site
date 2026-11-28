@@ -4,6 +4,21 @@
         <title>Divergence</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Sat, 28 Nov 2026 14:02:05 -0500</pubDate>
+            <link>https://divergenceapp.com/</link>
+            <sparkle:version>143</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Beta build, made from code 45401ddf.</p>
+<ul>
+<li><strong>More connections go direct on networks with IPv6.</strong> When this Mac connects to a Windows PC and both networks have IPv6, the connection can now go direct over IPv6 instead of through the relay. This is ready ahead of the next Windows release.</li>
+<li><strong>Steadier direct connections on Wi-Fi.</strong> When your Wi-Fi signal changes, Divergence no longer starts its direct connection over.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-143/Divergence-1.5.1-143.dmg" length="12787701" type="application/octet-stream" sparkle:edSignature="m6Ro6R2F0WNHbuxuruP36FlqPNlR2XF/aW+WLX+26hiQOFPQBtvJNAyQ8hTg2bOwzDP31pwE8sMQN91E1AhoCw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Fri, 27 Nov 2026 20:22:31 -0500</pubDate>
             <link>https://divergenceapp.com/</link>
             <sparkle:version>142</sparkle:version>
@@ -33,22 +48,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-141/Divergence-1.5.1-141.dmg" length="12666704" type="application/octet-stream" sparkle:edSignature="C3knTjp9sY9brmO4XVcb7UwFVpgI8s7k2LkLTV3W4ruZRixl3WVDel8j8udJQpPjmTagOtYcNn6lVBvAgPfyDw=="/>
-        </item>
-        <item>
-            <title>1.5.1</title>
-            <pubDate>Mon, 23 Nov 2026 13:03:48 -0500</pubDate>
-            <link>https://divergenceapp.com/</link>
-            <sparkle:version>140</sparkle:version>
-            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<p>Beta build, made from code 40372aa4.</p>
-<ul>
-<li><strong>Know when a Mac can't be reached.</strong> A Mac running this version that is online but can't take a connection from outside its own network now says so on its tile, with the reason.</li>
-<li><strong>Your Mac's reachability in Settings.</strong> The Sharing tab says whether this Mac is reachable from anywhere or only on its own network, and why.</li>
-<li><strong>Sleeping Macs no longer hold a dead connection.</strong> A Mac that wakes briefly in the background while asleep no longer opens a connection it can't answer.</li>
-</ul>
-]]></description>
-            <enclosure url="https://github.com/henryhernandez124-lgtm/divergence-releases/releases/download/v1.5.1-140/Divergence-1.5.1-140.dmg" length="12206638" type="application/octet-stream" sparkle:edSignature="UvJqW6FIlQ8dOSatNWdclEV+xlReOCStIIURQBJdPyH6YnzqQWf60BegsrXtkMlaghRLXfajouFPOk+OvRTtCg=="/>
         </item>
     </channel>
 </rss>
